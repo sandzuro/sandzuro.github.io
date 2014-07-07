@@ -105,19 +105,7 @@ function initGeometry(){
   }
 
   var coreTexture = new THREE.ImageUtils.loadTexture( "textures/purple_blue.jpg" );
-  for(var i = 0; i < 50; i++){
-    var material = new THREE.MeshLambertMaterial({ emissive:0x505050, map: coreTexture, color: 0xffffff});
-    
-    var height = Math.random() * 100+30;
-    
-    var box = new THREE.Mesh( new THREE.CubeGeometry(height, height, height), material);
 
-    box.position.set(Math.random() * 1000 - 500, Math.random() * 150 - 300 ,Math.random() * 1000 - 500);
-    box.rotation.set(Math.random() * Math.PI * 2, Math.random() * Math.PI * 2, Math.random() * Math.PI * 2);
-    
-    core.push(box);
-    scene.add(box);
-  }
 
   for(var i = 0; i < 100; i++){
     var material = new THREE.MeshLambertMaterial({ emissive:0x008000, color: 0x00FF00});
