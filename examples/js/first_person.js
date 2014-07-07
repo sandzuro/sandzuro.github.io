@@ -85,7 +85,7 @@ function initGeometry(){
   var floor = new THREE.Mesh(floorGeometry, floorMaterial);
   floor.rotation.x = -Math.PI / 2;
 
-  scene.add(floor);
+  //scene.add(floor);
 
   // add some boxes.
   var boxTexture = new THREE.ImageUtils.loadTexture( "textures/blue_blue.jpg" );
