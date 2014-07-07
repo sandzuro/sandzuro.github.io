@@ -107,7 +107,7 @@ function initGeometry(){
   var coreTexture = new THREE.ImageUtils.loadTexture( "textures/purple_blue.jpg" );
 
 
-  for(var i = 0; i < 100; i++){
+  for(var i = 0; i < 5; i++){
     var material = new THREE.MeshLambertMaterial({ emissive:0x008000, color: 0x00FF00});
     
     var size = Math.random() * 15+3;
