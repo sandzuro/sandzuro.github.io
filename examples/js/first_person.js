@@ -74,6 +74,8 @@ function initLights(){
 
 var floorTexture;
 function initGeometry(){
+  var jsonLoader = new THREE.JSONLoader();
+  jsonLoader.load( "js/man.json", addModelToScene );
 
   floorTexture = new THREE.ImageUtils.loadTexture( "textures/tile.jpg" );
   floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping; 
