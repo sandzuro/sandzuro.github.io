@@ -145,6 +145,12 @@ function addModelToScene( geometry, materials )
 
 
 function init(){
+  var jsonLoader = new THREE.JSONLoader();
+  jsonLoader.load( "models/android.js", addModelToScene );
+  // addModelToScene function is called back after model has loaded
+  
+  var ambientLight = new THREE.AmbientLight(0x111111);
+  scene.add(ambientLight);
 
   document.addEventListener('keydown', onKeyDown, false);
   document.addEventListener('keyup', onKeyUp, false);
