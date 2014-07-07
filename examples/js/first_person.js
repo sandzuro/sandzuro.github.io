@@ -135,6 +135,14 @@ function initGeometry(){
   }
 }
 
+function addModelToScene( geometry, materials ) 
+{
+  var material = new THREE.MeshFaceMaterial( materials );
+  android = new THREE.Mesh( geometry, material );
+  android.scale.set(10,10,10);
+  scene.add( android );
+}
+
 
 function init(){
 
