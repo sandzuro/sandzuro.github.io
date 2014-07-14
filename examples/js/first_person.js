@@ -75,7 +75,7 @@ function initLights(){
 var floorTexture;
 var loader =new THREE.JSONLoader();
 loader.load('js/man.json',function(geometry){ // create a new material  
-var material =new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('path_to_texture'), // specify and load the texture
+var material =new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('img/grid.jpg'), // specify and load the texture
                                             colorAmbient:[0.480000026226044,0.480000026226044,0.480000026226044],    colorDiffuse:[0.480000026226044,0.480000026226044,0.480000026226044],    colorSpecular:[0.8999999761581421,0.8999999761581421,0.8999999761581421]  });    // create a mesh with models geometry and material 
 var mesh =new THREE.Mesh(geometry,material);
     mesh.rotation.y =-Math.PI/5;
