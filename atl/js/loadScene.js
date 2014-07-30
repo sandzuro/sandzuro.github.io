@@ -192,7 +192,7 @@ require([
 			progressCallback: progressCallback
 		}).then(function(result) {
 			var project = null;
-
+            goo.renderer.setClearColor( 0, 0, 0, 0);
 			// Try to get the first project in the bundle.
 			for (var key in result) {
 				if (/\.project$/.test(key)) {
