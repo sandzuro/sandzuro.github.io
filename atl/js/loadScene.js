@@ -160,6 +160,7 @@ require([
 		gooRunner.world.add(new StateMachineSystem(gooRunner));
 		gooRunner.world.add(new HtmlSystem(gooRunner.renderer));
 		gooRunner.world.add(new TimelineSystem());
+        gooRunner.renderer.setClearColor( 0, 0, 0, 0);
 
 		return gooRunner;
 	}
