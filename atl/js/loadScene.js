@@ -153,7 +153,8 @@ require([
 			antialias: true,
 			manuallyStartGameLoop: true,
 			useDevicePixelRatio: true,
-			logo: false
+			logo: false,
+            alpha: true
 		});
 
 		gooRunner.world.add(new AnimationSystem());
