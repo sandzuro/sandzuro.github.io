@@ -45,7 +45,7 @@ require([
 
 	function setup(gooRunner, loader) {
 		// Application code goes here!
-
+        gooRunner.renderer.setClearColor( 0, 0, 0, 0);
 		/*
 		 To get a hold of entities, one can use the World's selection functions:
 		 var allEntities = gooRunner.world.getEntities();                  // all
