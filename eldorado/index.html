@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>Air_assault - Goo Create</title>
+<script>
+// If you try to load a scene without a server, you're gonna have a bad time
+if (window.location.protocol==='file:') {
+	alert('You need to run this webpage on a server. Check the code for links and details.');
+}
+</script>
+
+<!-- disable native mobile pinch-to-zoom, replacing with the Goo Engine zoom -->
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+<!-- og -->
+
+<meta property="og:image" content="https://goote.ch/exports/381829fb3cd64e48ab0bb753c27142d6/template.zip/img/social-thumbnail.jpg">
+
+
+
+<meta property="og:url" content="https://goote.ch/exports/381829fb3cd64e48ab0bb753c27142d6/template.zip"/>
+
+
+<meta property="og:title" content="Air_assault"/>
+<meta property="og:description" content="Air_assault">
+<meta property="og:updated_time" content="2014-10-17T13:39:52.027631+00:00"/>
+<meta property="og:site_name" content="Air_assault"/>
+<meta property="og:type" content="website"/>
+<!-- /og -->
+<link rel="icon" href="favicon.png" type="image/png" />
+<link rel="stylesheet" type="text/css" href="style/style.css">
+
+<script src="lib/Tween.js"></script>
+<script src="lib/requireLib.js"></script>
+<script src="//code.gooengine.com/0.11.4/lib/goo.js"></script>
+<script src="//code.gooengine.com/0.11.4/lib/fsmpack.js"></script>
+<script src="//code.gooengine.com/0.11.4/lib/quadpack.js"></script>
+<script src="//code.gooengine.com/0.11.4/lib/timelinepack.js"></script>
+<script src="//code.gooengine.com/0.11.4/lib/scriptpack.js"></script>
+<script src="//code.gooengine.com/0.11.4/lib/passpack.js"></script>
+<script src="//code.gooengine.com/0.11.4/lib/animationpack.js"></script>
+<script src="js/loadScene.js"></script>
+
+
+</head>
+
+<body >
+	<div id="goo-loading-overlay">
+		<div id="goo-loading-message">
+			<h2>Loading scene</h2>
+			<div id="progress-bar">
+				<div id="progress"></div>
+			</div>
+		</div>
+	</div>
+	<div id="canvas-outer" class="hidden">
+		<div id="canvas-inner">
+			
+		</div>
+	</div>
+	
+	<div id="fallback" data-background="url(//app.goocreate.com/resources/landing-splash01.jpg)">
+	
+		<div class="fallback-overlay">
+			<div class="fallback-content">
+			</div>
+		</div>
+	</body>
+</html>
