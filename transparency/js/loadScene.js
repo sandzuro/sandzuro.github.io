@@ -181,6 +181,7 @@
 		gooRunner.world.add(new goo.TimelineSystem());
 		gooRunner.world.add(new goo.PhysicsSystem());
 		gooRunner.world.add(new goo.ColliderSystem());
+		gooRunner.renderer.setClearColor( 0, 0, 0, 0);
 
 		return gooRunner;
 	}
