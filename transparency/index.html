@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
-<title>anvil - Goo Create</title>
+<title>anvil_t - Goo Create</title>
 <script>
 // If you try to load a scene without a server, you're gonna have a bad time
 if (window.location.protocol==='file:') {
@@ -48,9 +48,9 @@ window.goo = {useOwnRequire: true};
 
 
 
-<meta property="og:title" content="anvil"/>
+<meta property="og:title" content="anvil_t"/>
 <meta property="og:description" content="spacestation">
-<meta property="og:updated_time" content="2015-07-28T13:41:24.622150+00:00"/>
+<meta property="og:updated_time" content="2015-09-17T14:57:05.041952+00:00"/>
 <meta property="og:site_name" content="Goo Create"/>
 <meta property="og:type" content="website"/>
 <!-- /og -->
@@ -72,10 +72,10 @@ window.goo = {useOwnRequire: true};
 
 </head>
 
-<body style = "background-color: yellow;">
+<body style="background-color: #3366CC;">
 	<div id="goo-loading-overlay" class="loading">
 		<div id="goo-loading-message">
-			<h1>anvil</h1>
+			<h1>anvil_t</h1>
 			
 			<p>spacestation</p>
 			
@@ -90,102 +90,6 @@ window.goo = {useOwnRequire: true};
 			
 		</div>
 	</div>
-	
-	<div id="fallback" data-background="url(res/97da8dbe40f002026562499f0aed850cdbe35405.png)">
-	
-		<div class="fallback-overlay">
-			<div class="fallback-content">
-
-				<h1>No 3D Magic?</h1>
-
-				<div id="no-rendering-context" class="error-case">
-					<p class="error-msg">
-						We could not find a WebGL rendering context.<br/>
-						Check out the link below for some help to get things running.
-					</p>
-					<ul class="help-links">
-						<li class="no-margin">
-							<a target="_blank" href="http://get.webgl.org/troubleshooting">WebGL troubleshooting</a>
-						</li>
-					</ul>
-				</div>
-
-				<div id="webgl-disabled" class="error-case">
-					<p class="error-msg">
-						WebGL seems to be disabled. Check out the link below, for some guidance on solving this problem.
-					</p>
-
-
-					<ul class="help-links">
-						<li class="no-margin">
-							<a target="_blank" href="http://get.webgl.org/troubleshooting">WebGL troubleshooting</a>
-						</li>
-					</ul>
-				</div>
-
-				<div id="webgl-disabled-chrome" class="error-case">
-
-					<p class="error-msg">
-						WebGL seems to be disabled! To enable it, follow these steps:
-					</p>
-
-					<ul class="help-steps">
-						<li>
-							Open a new tab, and enter chrome://flags.
-						</li>
-						<li>
-							Find the post disable WebGL, if it is enabled, disable it.
-						</li>
-						<li>
-							Restart chrome. After restarting, the scene you were trying to reach here, should load. If not, you will unfortunately need to read the next step.
-						</li>
-
-						<li>
-							Open a new tab and enter chrome://gpu. Under Graphics Feature Status you will find the post WebGL. If the status of WebGL in the feature status still states Hardware acceleration disabled after making sure that the disable WebGL flag is not enabled, your graphics card is probably not supported or running properly.
-						</li>
-
-					</ul>
-
-					<ul class="help-links">
-						<li><a target="_blank" href="http://get.webgl.org/troubleshooting">WebGL troubleshooting</a></li>
-						<li><a target="_blank" href="http://answers.goocreate.com/">Goo Q&amp;A</a></li>
-					</ul>
-				</div>
-
-				<div id="webgl-disabled-safari" class="error-case">
-					<p class="error-msg">
-						WebGL seems to be disabled! To enable it, follow these steps:
-					</p>
-
-					<ul class="help-steps">
-						<li>Open the Safari menu.</li>
-						<li>Select Preferences.</li>
-						<li>Open the Advanced tab.</li>
-						<li>Enable the Developer menu by checking the Show Develop menu in menu bar checkbox.</li>
-						<li>Open the Develop menu in the menu bar.</li>
-						<li>Select Enable WebGL.</li>
-						<li>You will then may have to restart your browser to enable the changes.</li>
-						<li>If this has not worked for you, try checking out...</li>
-					</ul>
-
-					<ul class="help-links">
-						<li><a target="_blank" href="http://get.webgl.org/troubleshooting">WebGL troubleshooting</a></li>
-						<li><a target="_blank" href="http://answers.goocreate.com/">Goo Q&amp;A</a></li>
-					</ul>
-
-				</div>
-
-				<div id="ios-error" class="error-case">
-					<p class="error-msg">
-						You will need to run iOS 8 or greater to take advantage of WebGL.<br/>
-					</p>
-
-					<p class="error-msg">
-						The release date of iOS 8 is <a target="_blank" href="http://www.macworld.co.uk/news/iosapps/ios-8-release-date-rumours-leaked-images-3495266/">rumored</a> to be some time during this autumn.
-					</p>
-				</div>
-			</div>
-		</div>
 		<script src="js/CanvasWrapper.js"></script>
 		<script src="js/WebGLSupport.js"></script>
 		<script src="js/GSRVMock.js"></script>
