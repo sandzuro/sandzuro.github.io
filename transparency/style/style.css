@@ -3,7 +3,7 @@
 body {
 	height: 100%;
 	margin: 0;
-	background: black;
+	background: none transparent;
 }
 
 #goo-loading-overlay p,
