@@ -15,17 +15,18 @@
 			"generator": "Object3D.toJSON"
 		},
 		"object": {
-			"uuid": "C15B2566-FC86-4B59-ABE0-1BAEE74A817D",
-			"type": "OrthographicCamera",
+			"uuid": "66D10BCF-643F-4024-8995-22D8CCAAC614",
+			"type": "PerspectiveCamera",
 			"name": "Camera",
+			"frustumCulled": false,
 			"layers": 1,
-			"matrix": [0.040785,0,-0.999168,0,-0.999168,0.000001,-0.040785,0,0.000001,1,0,0,0.000007,7.258037,0,1],
-			"fov": 50,
+			"matrix": [0.000774,0,-1,0,-1,0.000001,-0.000774,0,0.000001,1,0,0,0.00006,60.188117,0,1],
+			"fov": 10,
 			"zoom": 1,
-			"near": 0.01,
+			"near": 1,
 			"far": 1000,
 			"focus": 10,
-			"aspect": 1.641315,
+			"aspect": 1.657321,
 			"filmGauge": 35,
 			"filmOffset": 0
 		}
@@ -89,6 +90,7 @@
 				"metalness": 0.5,
 				"emissive": 0,
 				"map": "75DFDBE1-95F0-49EA-9264-5F7EEB33FB9A",
+				"flatShading": true,
 				"vertexColors": 1,
 				"depthFunc": 3,
 				"depthTest": true,
@@ -169,7 +171,7 @@
 		"B8E13EEE-5C3A-4222-9F72-D78216886355": [
 			{
 				"name": "camera",
-				"source": "var orbitcontrols = document.createElement('script');\nvar controls = null;\norbitcontrols.src = \"https://threejs.org/examples/js/controls/OrbitControls.js\";\norbitcontrols.onload = function () {\n    if (!controls && THREE.OrbitControls) controls = new THREE.OrbitControls ( camera );\n};\ndocument.head.appendChild(orbitcontrols);"
+				"source": "var controls = null;\nif (!controls && THREE.OrbitControls) controls = new THREE.OrbitControls ( camera );\nvar orbitcontrols = document.createElement('script');\nvar controls = null;\norbitcontrols.src = \"https://threejs.org/examples/js/controls/OrbitControls.js\";\norbitcontrols.onload = function () {\n    if (!controls && THREE.OrbitControls) controls = new THREE.OrbitControls ( camera );\n};\ndocument.head.appendChild(orbitcontrols);"
 			}]
 	}
 }
