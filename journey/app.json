@@ -16,7 +16,7 @@
 		},
 		"object": {
 			"uuid": "C15B2566-FC86-4B59-ABE0-1BAEE74A817D",
-			"type": "PerspectiveCamera",
+			"type": "OrthographicCamera",
 			"name": "Camera",
 			"layers": 1,
 			"matrix": [0.040785,0,-0.999168,0,-0.999168,0.000001,-0.040785,0,0.000001,1,0,0,0.000007,7.258037,0,1],
