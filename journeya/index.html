@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Hello, World! - A-Frame</title>
-    <meta name="description" content="Hello, World! - A-Frame">
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+    <a-scene vr-mode-ui="enabled: false">
+      <a-assets>
+        <a-asset-item response-type="arraybuffer" id="qr" src="https://cdn.glitch.com/3045ddc1-bebb-4d13-b2e7-9483a0a2db70%2Fmodel.glb?1530448275253" ></a-asset-item>
+     </a-assets>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+      <a-entity gltf-model="#qr" position="0 0 0" scale="5 5 5" src="https://cdn.glitch.com/3045ddc1-bebb-4d13-b2e7-9483a0a2db70%2Fqr_maze%20(1).gltf?1530464636932" shadow></a-entity>
+      <a-sky color="#FFFFFF" ></a-sky>
+      <a-entity camera position="0 1.6 0">
+  </a-entity>
     </a-scene>
   </body>
 </html>
