@@ -1,0 +1,955 @@
+.mobileCross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-image: url('../../img/vacancies-cross.svg');
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  border: none;
+  display: none;
+  z-index: 9;
+
+  &-menu {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 17px;
+    height: 16px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.navItemsRightBox {
+  display: -webkit-flex;
+  justify-content: space-between;
+  margin-top: 36px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    margin-top: 22px;
+  }
+}
+
+.navWrapper {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .topNav-bg {
+    display: -webkit-flex;
+    display: flex;
+    font-family: "Aeroport";
+    height: 37px;
+    padding-top: 15px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    transition: background-color .3s cubic-bezier(0.4, 0.2, 0.2, 1);
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      height: 54px;
+      padding-top: 0;
+      /*z-index: 0;*/
+    }
+
+    @media (min-width: 1025px) {
+      height: 70px;
+      padding-top: 0;
+      z-index: 2;
+    }
+  }
+
+  .navItemCity {
+    cursor: pointer !important;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 17px;
+
+    &:hover {
+      cursor: pointer !important;
+      transition: all .3s ease;
+    }
+  }
+
+  .menu {
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s ;
+  }
+
+  .topLogo {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all .18s ease-out;
+
+    @media (max-width: 767px) {
+      margin-top: 0;
+    }
+
+    &-mobileNav {
+      position: absolute;
+      display: block;
+      top: 10px;
+      right: 42px;
+
+      @media (max-width: 766px) {
+        top: 15px;
+        right: 13px;
+      }
+
+      @media (min-width: 1025px) {
+        display: none;
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        right: 42px;
+      }
+    }
+  }
+
+  .topLogo a {
+    position: relative;
+    display: block;
+  }
+
+  .topLogoDark {
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    path {
+      transition: fill .3s cubic-bezier(0.4, 0.2, 0.2, 1);
+    }
+  }
+
+  .navItemsBox {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
+    a {
+      display: block;
+    }
+
+  }
+
+  .navLink {
+    position: relative;
+    color: inherit;
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #8d8d8d;
+      bottom: -15px;
+      opacity: 0;
+      transition: all .3s cubic-bezier(0.4, 0.2, 0.2, 1);
+    }
+
+
+    &.is-current {
+      &:hover {
+        color: #000;
+      }
+      &:after {
+        background-color: #000;
+        opacity: 1;
+      }
+    }
+  }
+
+  .navItem {
+    cursor: pointer !important;
+    font-size: 17px;
+    transition: .3s;
+    color: #000;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    .navLink:hover {
+      color: #000;
+      cursor: pointer !important;
+      transition: all .3s cubic-bezier(0.4, 0.2, 0.2, 1);
+
+      &:not(.is-current) {
+        color: #8d8d8d;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    @media (min-width: 1920px) {
+      font-size: 19px;
+      letter-spacing: .45px;
+    }
+  }
+
+  .navSearch {
+    display: none;
+  }
+
+  &.dark {
+    .navShrink {
+      border-color: white !important;
+    }
+
+    .topNav-bg {
+      background-color: #000;
+    }
+
+    .navItemsBox, .navLink {
+      color: white;
+    }
+
+    .navLink:hover {
+      color: #8d8d8d;
+      &.is-current {
+        color: #fff;
+      }
+    }
+
+    .navLink.is-current {
+      &:after {
+        background-color: #fff;
+      }
+    }
+
+    .selected {
+      background: transparent;
+    }
+
+    .lang-selector_item.is-desktop {
+      color: white;
+      &:hover {
+        color: #8d8d8d;
+      }
+    }
+
+    .lang-selector_arrow.is-desktop polygon {
+      fill: white;
+    }
+
+    .navMenuHoverIcon {
+      background: url(../img/icon_arrow_down_white.svg) right no-repeat;
+    }
+
+    .navSearchDark {
+      background: url(../img/nav_icon_glass.svg) center no-repeat;
+      background-position-y: 0;
+    }
+
+    .topLogoDark {
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  &.transparent {
+    &:not (.on-desktop) {
+      .navShrink {
+        border-color: white !important;
+      }
+
+      .topNav-bg {
+        background-color: transparent;
+      }
+
+      .navItemsBox, .navLink {
+        color: white;
+      }
+
+      .navLink:hover {
+        color: #8d8d8d;
+        &.is-current {
+          color: #000;
+        }
+      }
+
+      .navLink.is-current {
+        &:after {
+          background-color: #fff;
+        }
+      }
+
+      .selected {
+        background: transparent;
+      }
+
+      .lang-selector_item.is-desktop {
+        color: white;
+        &:hover {
+          color: #8d8d8d;
+        }
+      }
+
+      .lang-selector_arrow.is-desktop polygon {
+        fill: white;
+      }
+
+      .navMenuHoverIcon {
+        background: url(../img/icon_arrow_down_white.svg) right no-repeat;
+      }
+
+      .navSearchDark {
+        background: url(../img/nav_icon_glass.svg) center no-repeat;
+        background-position-y: 0;
+      }
+
+      .topLogoDark {
+        path {
+          fill: white;
+        }
+      }
+    }
+
+    @media (min-width: 766px) {
+      .navShrink {
+        border-color: white !important;
+      }
+
+      .topNav-bg {
+        background-color: transparent;
+      }
+
+      .navItemsBox, .navLink {
+        color: white;
+      }
+
+      .navLink:hover {
+        color: #8d8d8d;
+        &.is-current {
+          color: #000;
+        }
+      }
+
+      .navLink.is-current {
+        &:after {
+          background-color: #fff;
+        }
+      }
+
+      .selected {
+        background: transparent;
+      }
+
+      .lang-selector_item.is-desktop {
+        color: white;
+        &:hover {
+          color: #8d8d8d;
+        }
+      }
+
+      .lang-selector_arrow.is-desktop polygon {
+        fill: white;
+      }
+
+      .navMenuHoverIcon {
+        background: url(../img/icon_arrow_down_white.svg) right no-repeat;
+      }
+
+      .navSearchDark {
+        background: url(../img/nav_icon_glass.svg) center no-repeat;
+        background-position-y: 0;
+      }
+
+      .topLogoDark {
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+
+  &.transparent-black {
+    &:not (.on-desktop) {
+      .navShrink {
+        border-color: #000 !important;
+      }
+
+      .topNav-bg {
+        background-color: transparent;
+      }
+
+      .navItemsBox, .navLink {
+        color: #000;
+      }
+
+      .navLink:hover {
+        color: #8d8d8d;
+        &.is-current {
+          color: #000;
+        }
+      }
+
+      .navLink.is-current {
+        &:after {
+          background-color: #fff;
+        }
+      }
+
+      .selected {
+        background: transparent;
+      }
+
+      .lang-selector_item.is-desktop {
+        color: #000;
+        &:hover {
+          color: #8d8d8d;
+        }
+      }
+
+      .lang-selector_arrow.is-desktop polygon {
+        fill: #000;
+      }
+
+      .topLogoDark {
+        path {
+          fill: #000;
+        }
+      }
+    }
+
+    @media (min-width: 766px) {
+      .navShrink {
+        border-color: #000 !important;
+      }
+
+      .topNav-bg {
+        background-color: transparent;
+      }
+
+      .navItemsBox, .navLink {
+        color: #000;
+      }
+
+      .navLink:hover {
+        color: #8d8d8d;
+        &.is-current {
+          color: #000;
+        }
+      }
+
+      .navLink.is-current {
+        &:after {
+          background-color: #000;
+        }
+      }
+
+      .selected {
+        background: transparent;
+      }
+
+      .lang-selector_item.is-desktop {
+        color: #000;
+        &:hover {
+          color: #8d8d8d;
+        }
+      }
+
+      .lang-selector_arrow.is-desktop polygon {
+        fill: #000;
+      }
+
+      .navMenuHoverIcon {
+        background: url(../img/icon_arrow_down_white.svg) right no-repeat;
+      }
+
+      .navSearchDark {
+        background: url(../img/nav_icon_glass.svg) center no-repeat;
+        background-position-y: 0;
+      }
+
+      .topLogoDark {
+        path {
+          fill: #000;
+        }
+      }
+    }
+  }
+}
+
+.lang-selector {
+  display: inline-block;
+  width: auto;
+
+  @media (min-width: 766px) {
+    width: 62px;
+  }
+
+  &_inner {
+    position: relative;
+    font-size: 0;
+    cursor: pointer;
+  }
+
+  &_arrow {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    transition: all .18s ease-out;
+
+    @media (min-width: 766px) and (max-width: 1365px) {
+      left: 100%;
+    }
+
+    @media (min-width: 1026px) {
+      left: calc(100% - 15px);
+    }
+
+    svg {
+      position: relative;
+      top: 3px;
+
+      @media (min-width: 768px) and (max-width: 1025px) {
+        top: 1px;
+      }
+
+      @media (min-width: 1026px) and (max-width: 1365px) {
+        top: 2px;
+      }
+
+      @media (min-width: 1366px) {
+        top: 2px;
+      }
+    }
+  }
+
+  &_item {
+    display: inline-block;
+    font-family: "Aeroport";
+    color: #8D8D8D;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    text-transform: uppercase;
+    visibility: hidden;
+    transition: all .18s ease-out;
+    z-index: -1;
+    text-align: center;
+    font-size: 17px;
+    padding-right: 24px;
+
+    @media (max-width: 767px) {
+      font-size: 17px;
+      line-height: 21px;
+    }
+
+    &.active {
+      color: black;
+
+      @media (max-width:989px) {
+        opacity: 1;
+        position: relative;
+        visibility: visible;
+        z-index: 3;
+      }
+    }
+
+    &:hover {
+      color: black;
+    }
+
+    &.selected {
+      color: black;
+      background: transparent;
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      z-index: 3;
+    }
+  }
+}
+
+.tabletNav-item:nth-of-type(4),
+.tabletNav-item:nth-of-type(6) {
+  padding-top: 30px;
+}
+
+.tabletNav-item:first-of-type {
+  margin-top: 0;
+  padding-top: 111px;
+}
+
+.topNav {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  font-family: "Aeroport";
+  height: 70px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: transparent;
+  transition: transform .4s ease-out;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 15px;
+    height: 37px;
+    z-index: 3;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-left: 0px;
+    width: 100%;
+    height: 54px;
+    z-index: 3;
+  }
+  @media (min-width: 1024px) and (max-width: 1110px) {
+    margin-left: 0px;
+    max-width: 1024px;
+    padding: 0 43px 0 43px;
+    width: calc(100% - 43px - 43px);
+  }
+
+  @media (min-width: 1111px) and (max-width: 1365px) {
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 0px;
+    max-width: 1024px;
+  }
+  @media (min-width: 1366px) and (max-width: 1599px) {
+    max-width: 1220px;
+    width: 100%;
+  }
+  @media (min-width: 1600px) and (max-width: 1919px) {
+    width: 100%;
+    max-width: 1359px;
+  }
+  @media (min-width: 1920px) {
+    width: 100%;
+  }
+}
+
+.navSearch {
+  height: 16px;
+  margin-right: 35px;
+  width: 19px;
+  position: relative;
+  bottom: 5px;
+
+  &:hover {
+    border-bottom: 2px solid transparent;
+  }
+
+  @media (max-width: 767px) {
+    top: 9px;
+    right: 2px;
+    position: relative;
+    bottom: 0;
+  }
+
+  @media (min-width: 1920px) {
+    right: 23px;
+  }
+
+  &--desktop {
+    display: block;
+
+    @media (max-width: 767px), (min-width: 768px) and (max-width: 1024px) {
+      display: none;
+    }
+  }
+}
+
+.navSearchDark {
+  background: url('../../img/nav_icon_glass_dark.svg') center no-repeat;
+  background-position-y: 0px;
+  background-size: contain;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: none;
+  }
+}
+.navSearchLight {
+  background: url('../../img/nav_icon_glass.svg') center no-repeat;
+  background-position-y: 0px;
+  background-size: contain;
+}
+.navGeo {
+  height: 30px;
+  margin-right: 0px;
+  width: 30px;
+}
+.navGeoDark {
+  background: url('../../img/nav_icon_geo_dark.svg') center no-repeat;
+  background-position-y: 0px;
+}
+.navGeoLight {
+  background: url('../../img/nav_icon_geo.svg') center no-repeat;
+  background-position-y: 0px;
+}
+
+.topLogo-mobileNav {
+  right: 0px;
+  top: 25px;
+  position: absolute;
+  z-index: 1;
+}
+
+.topLogoDark {
+  height: 35px;
+  transition: .3s;
+  width: 290px;
+  background-size: contain;
+
+  @media (max-width: 767px) {
+    display: block !important;
+    width: 222px;
+    height: 25px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 280px;
+  }
+
+  @media (min-width: 1366px) and (max-width: 1599px) {
+    width: 290px;
+  }
+
+  @media (min-width: 1600px) and (max-width: 1919px) {
+    width: 290px;
+  }
+}
+
+.topLogoLight {
+  height: 50px;
+  transition: .3s;
+  width: 300px;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: none !important;
+  }
+}
+.mobileNav {
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  transition: .3s ease-out left;
+  width: calc(100% - 30px);
+  height: calc(100% - 63px);
+  background: #fff;
+  padding: 0 15px;
+  padding-top: 63px;
+
+  @media (min-width: 360px) {
+    padding-top: 76px;
+    height: calc(100% - 70px);
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &-isOpen {
+    left: 0;
+  }
+
+  &-item {
+    font-size: 18px;
+    letter-spacing: .1px;
+    line-height: 20px;
+    font-family: "Aeroport-bold";
+    padding-bottom: 20px;
+
+    @media (min-width: 360px) {
+      font-size: 21px;
+      letter-spacing: .32px;
+      line-height: 40px;
+      padding-bottom: 0px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-family: "Aeroport";
+    }
+
+    a {
+      color: #000;
+    }
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
+
+.tabletNav {
+  position: fixed;
+  display: none;
+  left: -70vw;
+  width: calc(50vw - 40px);
+  height: 100%;
+  background-color: #fff;
+  transition: .3s ease left;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &-item {
+    font-size: 21px;
+    letter-spacing: .32px;
+    line-height: 38px;
+    font-family: "Aeroport-bold";
+
+    a {
+      color: #000;
+    }
+  }
+
+  &-box {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex: 1;
+  }
+
+  &-extrabox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex: 1;
+    justify-content: space-evenly;
+
+    @media (min-height: 800px) {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.tabletNav-item:nth-of-type(4),
+.tabletNav-item:nth-of-type(6) {
+  padding-top: 30px;
+}
+
+.tabletNav-item:first-of-type {
+  margin-top: 0;
+  padding-top: 111px;
+}
+
+.tabletNav-isOpen {
+  padding-left: 40px;
+  left: 0;
+}
+
+.tabletCross {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 17px;
+  height: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.tabletBlurLayer {
+  position: absolute;
+  display: none;
+  width: calc(50vw + 40px);
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  left: 50vw;
+  z-index: 15;
+  transition: all .3s ease;
+  opacity: 0;
+
+  &--toShow {
+    display: block;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+}
+
+.navShrink {
+  display: none;
+  position: relative;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  cursor: pointer !important;
+  display: block;
+  width: 44px;
+  height: 10px;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: block;
+  }
+
+  @media (max-width: 767px) {
+    color: black !important;
+  }
+
+  &-mobile {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 17px;
+
+    @media (max-width: 767px) {
+      top: 20px !important;
+      display: block;
+    }
+  }
+
+  &-cross {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background-image: url('../../img/vacancies-cross.svg');
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    border: none;
+    z-index: 1;
+  }
+
+  &-tablet {
+    display: none;
+    left: 45px;
+    top: 20px;
+    position: absolute;
+
+    @media (min-width: 768px) and (max-width: 1025px) {
+      display: block;
+    }
+  }
+}

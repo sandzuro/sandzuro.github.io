@@ -1,0 +1,620 @@
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	/* border-bottom: 2px solid #fff; */
+	transition: all .3s ease;
+}
+
+.expPageWrapper {
+  padding: 0 73px 0 73px;
+  font-family: "Aeroport";
+  margin: 0 auto 150px auto;
+  max-width: 1220px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+    max-width: 767px;
+    overflow: hidden;
+    padding: 0 15px 0 15px;
+    margin-bottom: 0px;
+  }
+
+	@media screen and (min-width: 768px) and (max-width: 1025px) {
+    max-width: 940px;
+    padding: 0 43px 0 43px;
+    margin-bottom: 61px;
+  }
+
+  @media screen and (min-width: 1026px) and (max-width: 1365px) {
+    max-width: 1024px;
+    padding: 0 43px 0 43px;
+    margin-bottom: 33px;
+  }
+
+  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+    max-width: 1220px;
+    margin-bottom: 33px;
+  }
+
+  @media screen and (min-width: 1600px) and (max-width: 1919px) {
+    max-width: 1359px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .expPageWrapper,
+  .topNav {
+    max-width: 1680px;
+  }
+}
+
+.topScreen-block {
+  align-items: flex-end;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+  position: relative;
+  margin-bottom: 57px;
+  margin-left: calc((1220px - 100vw)/2);
+  overflow: hidden;
+  width: 100vw;
+
+	@media screen and (min-width: 300px) and (max-width:767px) {
+		margin-bottom: 12px;
+		margin-right: 15px;
+		margin-left: 0px;
+		margin-top: 95px;
+		width: calc(100vw - 30px);
+
+		.slick-track {
+			height: 100%;
+		}
+	}
+
+	.slick-slide img {
+		@media screen and (min-width: 300px) and (max-width:767px) {
+			position: relative;
+			height: 100%;
+			width: auto;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		@media screen and (min-width: 440px) and (max-width: 767px) {
+			width: calc(100vw - 30px);
+			height: auto;
+		}
+
+		@media screen and (min-width: 768px) and (max-width: 1365px) {
+			height:100%;
+			width: auto;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	@media screen and (min-width: 300px) and (max-width: 439px) {
+		height: 224px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width:1111px) {
+    margin-bottom: 30px;
+    margin-left: -43px;
+		height: 785px;
+		.slick-track {
+			height: 100%;
+		}
+	}
+
+	@media screen and (min-width: 1112px) and (max-width:1365px) {
+    margin-bottom: 65px;
+    margin-left: calc((1024px - 100vw)/2);
+		height: 785px;
+		.slick-track {
+			height: 100%;
+		}
+	}
+
+	.slick-list {
+		@media (min-width: 1366px) {
+			height: auto !important;
+			top: 50%;
+			transform: translate3d(0, -50%, 0) !important;
+		}
+	}
+
+	@media (min-width: 1366px) and (max-width: 1599px) {
+		height: 650px;
+	}
+
+	@media (min-width: 1600px) and (max-width: 1919px) {
+		height: 765px;
+	}
+
+	@media screen and (min-width:1600px) {
+	  margin-bottom: 65px;
+		margin-left: calc((1359px - 100vw)/2);
+	}
+
+	@media screen and (min-width:1920px) {
+		height: 860px;
+    margin-bottom: 60px;
+  	margin-left: calc((1682px - 100vw)/2);
+	}
+}
+
+.topScreen-slider {
+	position: relative;
+  background: transparent;
+	height: 100%;
+	width: 100%;
+  z-index: 1;
+
+	.slick-list {
+		height: 100%;
+	}
+}
+
+.topScreen {
+	position: relative;
+	width: 100vw;
+  overflow: hidden;
+	margin-right: 0 !important;
+
+	img {
+		width: 100%;
+	}
+
+	@media screen and (min-width: 300px) and (max-width:767px) {
+		height: 318px;
+		margin-right: 15px;
+		margin-left: 0px;
+		width: calc(100vw - 30px);
+	}
+}
+
+.topScreenNavArrow {
+  cursor: pointer;
+  height: 35px;
+	width: 15px;
+  position: absolute;
+  top: 50%;
+	transform: translateY(-50%);
+  transition: .3s;
+  z-index: 1;
+
+	svg {
+		width: 100%;
+
+		polyline {
+			transition: stroke .3s cubic-bezier(0.4, 0.2, 0.2, 1);
+		}
+	}
+
+	&:hover svg {
+		polyline {
+			stroke: #8d8d8d;
+		}
+	}
+
+	@media screen and (max-width: 766px) {
+		display:none;
+	}
+}
+
+.topScreenNavArrowLeft {
+  display: none;
+  left: 47px;
+}
+
+.topScreenNavArrowRight {
+  right:47px;
+}
+
+.light {
+  color: #fff;
+}
+.dark {
+  color: #000;
+}
+/*HOVER MENU BLOCK*/
+.menu {
+  align-items: center;
+  flex-direction: column;
+  height: 39px;
+  transition: .3s ;
+  width: 140px;
+}
+.menuActive {
+  display: flex;
+  justify-content: space-between;
+
+  .menuElemNav {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  &:hover {
+    border-bottom-color: #000;
+    cursor: pointer !important;
+    opacity: .6;
+    transition: border-bottom-color 0.3s ease;
+  }
+}
+.menuHidden {
+  display: none;
+  flex-direction: column;
+}
+.menuElemNav {
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  opacity: .6;
+  padding: 13px 0;
+}
+.menuHidden .menuElemNav:hover {
+  opacity: 1;
+}
+#topMenuElem {
+  padding: 0;
+  opacity: 1;
+}
+.isOpen {
+  border-bottom: 2px solid #000;
+  cursor: pointer !important;
+  opacity: .6;
+  transition: all .3s ease;
+}
+.cityIconWhite {
+  background: url(../../img/icon_arrow_down_white.svg) right no-repeat;
+}
+.cityIconDark {
+  background: url(../../img/icon_arrow_down.svg) right no-repeat;
+}
+/*END HOVER MENU BLOCK*/
+.navGeo {
+  height: 30px;
+  margin-right: 0px;
+  width: 30px;
+}
+.navGeoDark {
+  background: url(../../img/nav_icon_geo_dark.svg) center no-repeat;
+  background-position-y: 0px;
+}
+.navGeoLight {
+  background: url(../../img/nav_icon_geo.svg) center no-repeat;
+  background-position-y: 0px;
+}
+
+/*BODY*/
+
+.descr {
+	display: flex;
+	justify-content: space-between;
+  margin-bottom: 140px;
+  max-width: 1220px;
+	width: 100%;
+
+	@media screen and (min-width:1600px) {
+		margin-bottom: 136px;
+		max-width: 1366px;
+		width: 100%;
+	}
+
+	@media screen and (min-width:1920px) {
+		margin-bottom: 159px;
+		max-width: 1684px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width:1023px) {
+		margin-bottom: 61px;
+	}
+
+	@media screen and (min-width: 300px) and (max-width:767px) {
+		margin-left: 0;
+		margin-bottom: 0px;
+		width: 100%;
+	}
+}
+
+.descriptionMain {
+	display: flex;
+	flex-direction: column;
+    margin-left: 2px;
+    width: 597px;
+}
+@media screen and (min-width:1600px) {
+	.descriptionMain {
+	    width: 667px;
+	}
+}
+@media screen and (min-width:1920px) {
+	.descriptionMain {
+	    width: 819px;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width:1365px) {
+	.descriptionMain {
+		width: 417px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+	.descriptionMain {
+		width: 546px;
+	}
+}
+@media screen and (min-width: 300px) and (max-width:767px) {
+	.descriptionMain {
+		margin-left: 0;
+		width: 100%;
+	}
+}
+
+.descrTitle {
+	font-family: 'Geometria Narrow Heavy';
+	font-size: 76px;
+  margin-bottom: 50px;
+
+	@media screen and (min-width:1600px) {
+		font-size: 88px;
+		margin-bottom: 67px;
+	}
+
+	@media screen and (min-width:1920px) {
+		font-size: 93px;
+		margin-bottom: 65px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width:1023px) {
+		font-size: 63px;
+		margin-bottom: 46px;
+	}
+
+	@media screen and (min-width: 361px) and (max-width:767px) {
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    height: 58px;
+		margin-bottom: 3px;
+	}
+
+	@media (max-width: 360px) {
+		display: flex;
+    justify-content: space-between;
+		font-size: 34px;
+		line-height: 38px;
+		margin-bottom: 3px;
+	}
+}
+.descrTitleLogoMob {
+    display: none;
+}
+@media screen and (min-width: 300px) and (max-width:767px) {
+    .descrTitleLogoMob {
+        background: url(../../img/mars-logo.png) left no-repeat;
+        background-size: 65px;
+        display: block;
+        height: 58px;
+        opacity: 0.6;
+        width: 58px;
+    }
+}
+
+
+.descrBody {
+	font-size: 16px;
+	line-height: 22px;
+
+	@media (min-width: 361px) and (max-width: 1919px) {
+		font-size: 17px;
+		line-height: 25px;
+	}
+	@media screen and (min-width:1920px) {
+		font-size: 19px;
+		line-height: 30px;
+		width: 81%;
+	}
+}
+
+.descriptionBox {
+  margin-bottom: 54px;
+
+	@media screen and (min-width:1600px) {
+		margin-bottom: 64px;
+	}
+	@media screen and (min-width: 768px) and (max-width:1023px) {
+		margin-bottom: 37px;
+	}
+
+	@media screen and (min-width: 300px) and (max-width:767px) {
+		margin-bottom: 25px;
+	}
+}
+
+.descriptionCell {
+	border-bottom: 1px #979797 solid;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	font-size: 16px;
+	padding: 13px 0;
+
+	@media (min-width: 361px) {
+		font-size: 17px;
+	}
+}
+@media screen and (min-width:1920px) {
+	.descriptionCell {
+		font-size: 19px;
+	}
+}
+@media screen and (min-width:1600px) {
+	.descriptionCell {
+		padding: 13.5px 0;
+	}
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+	.descriptionCell {
+		padding: 13.3px 0;
+	}
+}
+@media screen and (min-width: 300px) and (max-width:768px) {
+	.descriptionCell {
+        display: block;
+        line-height: 25px;
+		margin-top: 1px;
+	}
+}
+.descriptionCell:nth-child(6) {
+    border-bottom: 1px solid transparent;
+}
+
+@media screen and (min-width:768px) {
+    .descriptionCellTitle {
+    	font-family: 'Aeroport-Bold';
+    	width: 35%;
+    }
+}
+@media screen and (min-width:1600px) {
+	.descriptionCellTitle {
+		width: 31%;
+	}
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+	.descriptionCellTitle {
+		width: 38%;
+	}
+}
+@media screen and (min-width: 300px) and (max-width:767px) {
+	.descriptionCellTitle {
+    	font-family: 'Aeroport-Bold';
+	}
+}
+
+
+
+.descriptionCellText {
+    color: black;
+}
+a.descriptionCellText {
+    cursor: pointer;
+}
+.descriptionCellText > sup {
+    /* font-size: 11px; */
+    vertical-align: super;
+    font-size:.65em;
+}
+
+.descriptionSecondary {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+	.descriptionSecondary {
+		width: 12%;
+	}
+}
+@media screen and (min-width: 300px) and (max-width:767px) {
+	.descriptionSecondary {
+		display:none;
+	}
+}
+
+.descriptionButton {
+    align-items: center;
+    align-self: flex-end;
+    border: 1px solid ;
+    display: flex;
+    font-size: 17px;
+    justify-content: center;
+    height: 49px;
+    margin-top: 19px;
+    width: 392px;
+
+		@media screen and (min-width:1600px) {
+			width: 432px;
+		}
+		@media screen and (min-width:1920px) {
+			font-size: 19px;
+			width: 532px;
+		}
+		@media screen and (min-width: 1024px) and (max-width:1365px) {
+			font-size: 16px;
+			width: 292px;
+		}
+		@media screen and (min-width: 768px) and (max-width:1023px) {
+			height: 49px;
+			margin-right: 5px;
+			margin-top: 7px;
+			width: 275px;
+		}
+}
+.descriptionButton:hover {
+    color: #8D8D8D;
+	cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+    .descriptionButton > p {
+        margin-top:1px;
+    }
+}
+
+.descriptionSecondaryLogo {
+	position: relative;
+  background: url(../../img/mars-logo.png) center no-repeat;
+  height: 100px;
+  opacity: 0.6;
+  margin-top: 71px;
+  margin-left: -17px;
+  transition: .3s;
+  width: 100px;
+
+	@media (min-width: 1026px) and (max-width: 1365px) {
+		left: calc(100% - 292px);
+		margin-left: 0 !important;
+	}
+
+	@media screen and (min-width:1366px) and (max-width: 1599px) {
+		left: calc(100% - 394px);
+		margin-left: 0 !important;
+	}
+
+	@media (min-width: 1600px) and (max-width: 1919px) {
+		left: calc(100% - 432px);
+		margin-left: 0 !important;
+	}
+
+	@media (min-width: 1920px) {
+		left: calc(100% - 532px);
+		margin-left: 0 !important;
+	}
+
+	@media screen and (min-width: 768px) and (max-width:1023px) {
+		background-size: 90%;
+		height: 90px;
+		margin-top: 51px;
+		margin-left: 4px;
+		width: 90px;
+	}
+}
+@media screen and (min-width:1366px) {
+	.descriptionSecondaryLogo {
+	    margin-left: 29px;
+	}
+    .descriptionSecondaryLogo:hover {
+        opacity: 1;
+    }
+}

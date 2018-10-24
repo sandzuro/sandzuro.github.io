@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Location's page</title>
+	<link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "./css/location_new/index.min.css" />
+	<link rel = "stylesheet" type = "text/css" href = "./fonts/fonts.css" />
+	<link rel = "stylesheet" type = "text/css" href = "./css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+</head>
+<body>
+
+	<!-- TOP NAV START -->
+	<div class="navWrapper transparent-black on-desktop">
+		<div class="topNav-bg"></div>
+		<div class="topNav">
+			<div class="navItemsBox dark">
+				<div class="navItem"><a class="navLink dark" href="./catalogue.html">опыты</a></div>
+				<div class="navItem"><a class="navLink dark" href="./locations_new.html">пространства</a></div>
+				<div class="navItem"><a class="navLink dark" href="./business.html">для бизнеса</div></a>
+				<div class="navItem"><a class="navLink dark" href="./faq.html">faq</div></a>
+				<div class='lang-desktop'>
+				 <div class='lang-selector' data-lang-selector='menu'>
+					 <div class='lang-selector_inner'>
+						 <span data-lang="ru" data-lang-current class='lang-selector_item is-desktop selected'>РУ</span>
+						 <span data-lang="fr" class="lang-selector_item is-desktop">ENG</span>
+						 <span class="lang-selector_arrow is-desktop" data-lang='arrow'>
+								<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+												<g id="iPad-768x1024-меню" transform="translate(-76.000000, -700.000000)" fill="#000000">
+														<g id="Button-/-Choose-/-RU" transform="translate(41.000000, 691.000000)">
+																<polygon id="Page-1-Copy-17" points="35.5 9.5 35.5 20.5 41.5 14.9997007"></polygon>
+														</g>
+												</g>
+										</g>
+								</svg>
+						 </span>
+					 </div>
+				 </div>
+			 </div>
+				<div class="topLogo" data-logo>
+					<a href="./index.html">
+						<div class="topLogoDark">
+							<svg class='business-block-container-bg-svg' width="286px" height="34px" viewBox="0 0 286 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<defs>
+									<polygon id="path-1" points="0.00013 33.6117653 285.86753 33.6117653 285.86753 4.53333333e-05 0.00013 4.53333333e-05"></polygon>
+								</defs>
+								<g id="Menu-/-1366-px-/-Black-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-934.000000, 0.000000)">
+									<g id="Branding-/-Logo-/-Black" transform="translate(934.000000, 0.000000)">
+										<g id="Page-1">
+											<mask id="mask-2" fill="white">
+												<use xlink:href="#path-1"></use>
+											</mask>
+											<g id="Clip-2"></g>
+											<path d="M266.56773,15.0838053 C267.305697,13.1240453 269.235763,11.6393787 272.30073,11.6393787 C275.649963,11.6393787 277.977397,13.3022053 277.977397,15.0838053 L266.56773,15.0838053 Z M285.86753,15.7964453 C285.86753,9.38268533 278.94243,6.65089867 272.81163,6.65089867 C263.50233,6.65089867 258.56363,11.2830587 258.56363,16.6872453 C258.56363,22.6848453 263.50233,26.6043653 274.00373,26.6043653 C278.374763,26.6043653 282.177697,25.7135653 285.413397,24.347672 L285.413397,19.597192 C283.54053,20.3692187 279.169497,21.200632 275.252597,21.200632 C269.178563,21.200632 266.39743,19.2998053 266.39743,17.6963653 L285.697663,17.6963653 C285.810763,17.281112 285.86753,16.4496987 285.86753,15.7964453 L285.86753,15.7964453 Z M184.14513,15.0838053 C184.883097,13.1240453 186.813163,11.6393787 189.87813,11.6393787 C193.227363,11.6393787 195.554797,13.3022053 195.554797,15.0838053 L184.14513,15.0838053 Z M203.445363,15.7964453 C203.445363,9.38268533 196.520263,6.65089867 190.38903,6.65089867 C181.080163,6.65089867 176.14103,11.2830587 176.14103,16.6872453 C176.14103,22.6848453 181.080163,26.6043653 191.58113,26.6043653 C195.952163,26.6043653 199.75553,25.7135653 202.99123,24.347672 L202.99123,19.597192 C201.11793,20.3692187 196.746897,21.200632 192.829997,21.200632 C186.756397,21.200632 183.97483,19.2998053 183.97483,17.6963653 L203.27463,17.6963653 C203.388163,17.281112 203.445363,16.4496987 203.445363,15.7964453 L203.445363,15.7964453 Z M101.608997,15.0838053 C102.346963,13.1240453 104.27703,11.6393787 107.34243,11.6393787 C110.691663,11.6393787 113.018663,13.3022053 113.018663,15.0838053 L101.608997,15.0838053 Z M120.90923,15.7964453 C120.90923,9.38268533 113.983697,6.65089867 107.85333,6.65089867 C98.5435967,6.65089867 93.6048967,11.2830587 93.6048967,16.6872453 C93.6048967,22.6848453 98.5435967,26.6043653 109.04543,26.6043653 C113.41603,26.6043653 117.219397,25.7135653 120.455097,24.347672 L120.455097,19.597192 C118.581797,20.3692187 114.210763,21.200632 110.294297,21.200632 C104.220263,21.200632 101.438697,19.2998053 101.438697,17.6963653 L120.73893,17.6963653 C120.852463,17.281112 120.90923,16.4496987 120.90923,15.7964453 L120.90923,15.7964453 Z M224.391397,6.65089867 C220.644797,6.65089867 217.636597,8.551272 216.33053,11.8769253 L215.252397,11.8769253 L214.798263,7.06660533 L208.38363,7.06660533 L208.38363,26.129272 L215.98993,26.129272 L215.98993,14.1930053 L227.286497,14.1930053 L227.286497,7.06660533 C226.945463,6.88844533 225.299663,6.65089867 224.391397,6.65089867 L224.391397,6.65089867 Z M161.212263,22.387912 L160.360763,22.387912 L154.96793,7.06660533 L147.134563,7.06660533 L154.400263,26.129272 L167.17233,26.129272 L174.438463,7.06660533 L166.604663,7.06660533 L161.212263,22.387912 Z M141.855263,6.65089867 C138.109097,6.65089867 135.100463,8.551272 133.79483,11.8769253 L132.716263,11.8769253 L132.26213,7.06660533 L125.847497,7.06660533 L125.847497,26.129272 L133.45423,26.129272 L133.45423,14.1930053 L144.750363,14.1930053 L144.750363,7.06660533 C144.409763,6.88844533 142.76353,6.65089867 141.855263,6.65089867 L141.855263,6.65089867 Z M243.520897,15.2619653 C241.30743,15.2619653 239.036763,14.965032 239.036763,13.717912 C239.036763,12.7677253 240.11533,12.292632 242.84013,12.292632 C246.07583,12.292632 250.78703,12.8864987 254.420097,14.074232 L254.420097,8.551272 C251.524997,7.54169867 246.415997,6.65089867 241.080363,6.65089867 C236.425497,6.65089867 230.975897,7.660472 230.975897,12.5895653 C230.975897,17.9343653 237.39053,17.9343653 243.520897,17.9343653 C245.678463,17.9343653 247.381463,18.2906853 247.381463,19.4784187 C247.381463,20.6656987 245.564497,20.962632 243.407797,20.962632 C239.320597,20.962632 233.928197,20.0128987 230.692497,18.7657787 L230.692497,24.2882853 C232.905963,25.3572453 238.298797,26.6043653 243.12353,26.6043653 C250.503197,26.6043653 255.441897,25.1196987 255.441897,20.4875387 C255.441897,15.2619653 249.651697,15.2619653 243.520897,15.2619653 L243.520897,15.2619653 Z M17.0296967,6.65089867 C13.1127967,6.65089867 10.0473967,8.729432 8.57146333,10.689192 L7.43613,10.689192 L7.43613,4.53333333e-05 L0.00013,4.53333333e-05 L0.00013,26.129272 L7.43613,26.129272 L7.43613,13.005272 L14.8157967,13.005272 C17.8239967,13.005272 19.3566967,14.3117787 19.3566967,17.459272 L19.3566967,26.129272 L26.79313,26.129272 L26.79313,17.9343653 C26.79313,10.8079653 23.8412633,6.65089867 17.0296967,6.65089867 L17.0296967,6.65089867 Z M76.46223,21.497112 C73.9644967,21.497112 71.01263,21.200632 69.4803633,20.962632 L69.4803633,13.005272 L77.0298967,13.005272 C80.1520633,13.005272 82.19523,14.0148453 82.19523,17.281112 C82.19523,20.5469253 79.5843967,21.497112 76.46223,21.497112 L76.46223,21.497112 Z M79.86823,6.65089867 C74.8727633,6.65089867 71.86413,9.14513867 70.6152633,10.689192 L69.4803633,10.689192 L68.2314967,7.06660533 L62.04393,7.06660533 L62.04393,33.611992 L69.4803633,33.611992 L69.4803633,25.060312 C70.5021633,25.4760187 74.5321633,26.6043653 77.8813967,26.6043653 C84.8636967,26.6043653 89.8019633,23.5756453 89.8019633,16.2715387 C89.8019633,10.2734853 85.60123,6.65089867 79.86823,6.65089867 L79.86823,6.65089867 Z M43.8794633,23.694872 L42.8576633,23.694872 L38.48663,7.06660533 L30.6532633,7.06660533 L36.2159633,26.129272 L42.9139967,26.129272 L39.9057967,33.611992 L47.3985633,33.611992 L58.3540967,7.06660533 L50.4639633,7.06660533 L43.8794633,23.694872 Z" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+										</g>
+									</g>
+								</g>
+							</svg>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="topLogo topLogo-mobileNav">
+				<a href="./index.html">
+					<div class="topLogoDark">
+						<svg class='business-block-container-bg-svg' width="286px" height="34px" viewBox="0 0 286 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<defs>
+								<polygon id="path-1" points="0.00013 33.6117653 285.86753 33.6117653 285.86753 4.53333333e-05 0.00013 4.53333333e-05"></polygon>
+							</defs>
+							<g id="Menu-/-1366-px-/-Black-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-934.000000, 0.000000)">
+								<g id="Branding-/-Logo-/-Black" transform="translate(934.000000, 0.000000)">
+									<g id="Page-1">
+										<mask id="mask-2" fill="white">
+											<use xlink:href="#path-1"></use>
+										</mask>
+										<g id="Clip-2"></g>
+										<path d="M266.56773,15.0838053 C267.305697,13.1240453 269.235763,11.6393787 272.30073,11.6393787 C275.649963,11.6393787 277.977397,13.3022053 277.977397,15.0838053 L266.56773,15.0838053 Z M285.86753,15.7964453 C285.86753,9.38268533 278.94243,6.65089867 272.81163,6.65089867 C263.50233,6.65089867 258.56363,11.2830587 258.56363,16.6872453 C258.56363,22.6848453 263.50233,26.6043653 274.00373,26.6043653 C278.374763,26.6043653 282.177697,25.7135653 285.413397,24.347672 L285.413397,19.597192 C283.54053,20.3692187 279.169497,21.200632 275.252597,21.200632 C269.178563,21.200632 266.39743,19.2998053 266.39743,17.6963653 L285.697663,17.6963653 C285.810763,17.281112 285.86753,16.4496987 285.86753,15.7964453 L285.86753,15.7964453 Z M184.14513,15.0838053 C184.883097,13.1240453 186.813163,11.6393787 189.87813,11.6393787 C193.227363,11.6393787 195.554797,13.3022053 195.554797,15.0838053 L184.14513,15.0838053 Z M203.445363,15.7964453 C203.445363,9.38268533 196.520263,6.65089867 190.38903,6.65089867 C181.080163,6.65089867 176.14103,11.2830587 176.14103,16.6872453 C176.14103,22.6848453 181.080163,26.6043653 191.58113,26.6043653 C195.952163,26.6043653 199.75553,25.7135653 202.99123,24.347672 L202.99123,19.597192 C201.11793,20.3692187 196.746897,21.200632 192.829997,21.200632 C186.756397,21.200632 183.97483,19.2998053 183.97483,17.6963653 L203.27463,17.6963653 C203.388163,17.281112 203.445363,16.4496987 203.445363,15.7964453 L203.445363,15.7964453 Z M101.608997,15.0838053 C102.346963,13.1240453 104.27703,11.6393787 107.34243,11.6393787 C110.691663,11.6393787 113.018663,13.3022053 113.018663,15.0838053 L101.608997,15.0838053 Z M120.90923,15.7964453 C120.90923,9.38268533 113.983697,6.65089867 107.85333,6.65089867 C98.5435967,6.65089867 93.6048967,11.2830587 93.6048967,16.6872453 C93.6048967,22.6848453 98.5435967,26.6043653 109.04543,26.6043653 C113.41603,26.6043653 117.219397,25.7135653 120.455097,24.347672 L120.455097,19.597192 C118.581797,20.3692187 114.210763,21.200632 110.294297,21.200632 C104.220263,21.200632 101.438697,19.2998053 101.438697,17.6963653 L120.73893,17.6963653 C120.852463,17.281112 120.90923,16.4496987 120.90923,15.7964453 L120.90923,15.7964453 Z M224.391397,6.65089867 C220.644797,6.65089867 217.636597,8.551272 216.33053,11.8769253 L215.252397,11.8769253 L214.798263,7.06660533 L208.38363,7.06660533 L208.38363,26.129272 L215.98993,26.129272 L215.98993,14.1930053 L227.286497,14.1930053 L227.286497,7.06660533 C226.945463,6.88844533 225.299663,6.65089867 224.391397,6.65089867 L224.391397,6.65089867 Z M161.212263,22.387912 L160.360763,22.387912 L154.96793,7.06660533 L147.134563,7.06660533 L154.400263,26.129272 L167.17233,26.129272 L174.438463,7.06660533 L166.604663,7.06660533 L161.212263,22.387912 Z M141.855263,6.65089867 C138.109097,6.65089867 135.100463,8.551272 133.79483,11.8769253 L132.716263,11.8769253 L132.26213,7.06660533 L125.847497,7.06660533 L125.847497,26.129272 L133.45423,26.129272 L133.45423,14.1930053 L144.750363,14.1930053 L144.750363,7.06660533 C144.409763,6.88844533 142.76353,6.65089867 141.855263,6.65089867 L141.855263,6.65089867 Z M243.520897,15.2619653 C241.30743,15.2619653 239.036763,14.965032 239.036763,13.717912 C239.036763,12.7677253 240.11533,12.292632 242.84013,12.292632 C246.07583,12.292632 250.78703,12.8864987 254.420097,14.074232 L254.420097,8.551272 C251.524997,7.54169867 246.415997,6.65089867 241.080363,6.65089867 C236.425497,6.65089867 230.975897,7.660472 230.975897,12.5895653 C230.975897,17.9343653 237.39053,17.9343653 243.520897,17.9343653 C245.678463,17.9343653 247.381463,18.2906853 247.381463,19.4784187 C247.381463,20.6656987 245.564497,20.962632 243.407797,20.962632 C239.320597,20.962632 233.928197,20.0128987 230.692497,18.7657787 L230.692497,24.2882853 C232.905963,25.3572453 238.298797,26.6043653 243.12353,26.6043653 C250.503197,26.6043653 255.441897,25.1196987 255.441897,20.4875387 C255.441897,15.2619653 249.651697,15.2619653 243.520897,15.2619653 L243.520897,15.2619653 Z M17.0296967,6.65089867 C13.1127967,6.65089867 10.0473967,8.729432 8.57146333,10.689192 L7.43613,10.689192 L7.43613,4.53333333e-05 L0.00013,4.53333333e-05 L0.00013,26.129272 L7.43613,26.129272 L7.43613,13.005272 L14.8157967,13.005272 C17.8239967,13.005272 19.3566967,14.3117787 19.3566967,17.459272 L19.3566967,26.129272 L26.79313,26.129272 L26.79313,17.9343653 C26.79313,10.8079653 23.8412633,6.65089867 17.0296967,6.65089867 L17.0296967,6.65089867 Z M76.46223,21.497112 C73.9644967,21.497112 71.01263,21.200632 69.4803633,20.962632 L69.4803633,13.005272 L77.0298967,13.005272 C80.1520633,13.005272 82.19523,14.0148453 82.19523,17.281112 C82.19523,20.5469253 79.5843967,21.497112 76.46223,21.497112 L76.46223,21.497112 Z M79.86823,6.65089867 C74.8727633,6.65089867 71.86413,9.14513867 70.6152633,10.689192 L69.4803633,10.689192 L68.2314967,7.06660533 L62.04393,7.06660533 L62.04393,33.611992 L69.4803633,33.611992 L69.4803633,25.060312 C70.5021633,25.4760187 74.5321633,26.6043653 77.8813967,26.6043653 C84.8636967,26.6043653 89.8019633,23.5756453 89.8019633,16.2715387 C89.8019633,10.2734853 85.60123,6.65089867 79.86823,6.65089867 L79.86823,6.65089867 Z M43.8794633,23.694872 L42.8576633,23.694872 L38.48663,7.06660533 L30.6532633,7.06660533 L36.2159633,26.129272 L42.9139967,26.129272 L39.9057967,33.611992 L47.3985633,33.611992 L58.3540967,7.06660533 L50.4639633,7.06660533 L43.8794633,23.694872 Z" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+									</g>
+								</g>
+							</g>
+						</svg>
+					</div>
+				</a>
+			</div>
+
+			<!-- MOBILE NAV -->
+			<div class="navShrink navShrink-mobile"></div>
+			<div class="navShrink navShrink-tablet"></div>
+			<div class="mobileNav">
+				<div class="mobileCross-menu">
+					<svg width="100%" height="100%" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+					        <g id="iPad-768x1024-меню-2-Copy" transform="translate(-41.000000, -24.000000)" stroke="#000000">
+					            <g id="graphic-/--крест" transform="translate(42.000000, 25.000000)">
+					                <g id="Group">
+					                    <path d="M0.772727273,0.772727273 L16.2272727,16.2272727" id="Line" stroke-width="2"></path>
+					                    <path d="M16.2272727,0.772727273 L0.772727273,16.2272727" id="Line" stroke-width="2"></path>
+					                </g>
+					            </g>
+					        </g>
+					    </g>
+					</svg>
+				</div>
+				<div class="mobileNav-item"><a href="./catalogue.html">опыты</a></div>
+				<div class="mobileNav-item"><a href="./locations_new.html">пространства</a></div>
+				<div class="mobileNav-item"><a href="./faq.html">faq</a></div>
+				<div class="mobileNav-item"><a href="./business.html">для бизнеса</a></div>
+				<div class="mobileNav-item"><a href="./vacancy.html">вакансии</a></div>
+
+				<div class="footerWrap footerWrap-mobileMenu">
+					<a class="mailTo" href="mailto:hello@hyperverse.io">hello@hyperverse.io</a>
+					<div class='lang-desktop'>
+					 <div class='lang-selector' data-lang-selector='footer'>
+						 <div class='lang-selector_inner'>
+							 <span data-lang="ru" data-lang-current class='lang-selector_item selected'>РУ</span>
+							 <span data-lang="fr" class="lang-selector_item">ENG</span>
+							 <span class="lang-selector_arrow" data-lang='arrow'>
+									<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<g id="iPad-768x1024-меню" transform="translate(-76.000000, -700.000000)" fill="#000000">
+												<g id="Button-/-Choose-/-RU" transform="translate(41.000000, 691.000000)">
+													<polygon id="Page-1-Copy-17" points="35.5 9.5 35.5 20.5 41.5 14.9997007"></polygon>
+												</g>
+											</g>
+										</g>
+									</svg>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="footerTitle">
+						Подпишитесь на новости:
+					</div>
+
+					<div class="footerInput">
+						<div class="searchBlock">
+							<form class="searchInput" action="">
+								<input class="searchField" type="text" placeholder="Your e-mail" required>
+								<input class="searchButton" type="submit" value="">
+							</form>
+						</div>
+					</div>
+					<div class="footerSocial">
+						<a href="https://www.facebook.com/hyperversevr">
+							<div class="footerSocialElem FB">
+								<svg width="11px" height="22px" viewBox="0 0 11 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<defs>
+										<polygon id="path-1" points="4.31372549e-05 -8.62745098e-05 10.1954902 -8.62745098e-05 10.1954902 21.7984196 4.31372549e-05 21.7984196"></polygon>
+									</defs>
+									<g id="1366x900-ONE-EXP-light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-142.000000, -2785.000000)">
+										<g id="Футер" transform="translate(75.000000, 2644.000000)">
+											<g id="Group-2" transform="translate(0.000000, 141.000000)">
+												<g id="Page-1" transform="translate(67.000000, 0.000000)">
+													<mask id="mask-2" fill="white">
+														<use xlink:href="#path-1"></use>
+													</mask>
+													<g id="Clip-2"></g>
+													<path class="fill" d="M6.72988627,6.52873725 L6.72988627,4.77822745 C6.72988627,3.93877647 7.28592549,3.73775686 7.68839608,3.73775686 L10.1364353,3.73775686 L10.1364353,-8.62745098e-05 L6.7656902,-8.62745098e-05 C3.0162,-8.62745098e-05 2.17631765,2.7676 2.17631765,4.56556078 L2.17631765,6.52873725 L4.31372549e-05,6.52873725 L4.31372549e-05,9.16614902 L4.31372549e-05,10.8933647 L2.20004314,10.8933647 L2.20004314,21.7984627 L6.56467059,21.7984627 L6.56467059,10.8933647 L9.79349412,10.8933647 L9.93541569,9.17822745 L10.1955333,6.52873725 L6.72988627,6.52873725 Z" fill="#000000" mask="url(#mask-2)"></path>
+												</g>
+											</g>
+										</g>
+									</g>
+								</svg>
+							</div>
+						</a>
+						<a href="https://www.instagram.com/hyperversevr/">
+							<div class="footerSocialElem IN">
+								<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<defs>
+										<polygon id="path-1" points="0 0.15224 21.84798 0.15224 21.84798 21.999956 0 21.999956"></polygon>
+									</defs>
+									<g id="1366x900-ONE-EXP-light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-189.000000, -2785.000000)">
+										<g id="Футер" transform="translate(75.000000, 2644.000000)">
+											<g id="Group-2" transform="translate(0.000000, 141.000000)">
+												<g id="Page-1" transform="translate(114.000000, 0.000000)">
+													<g id="Group-3">
+														<mask id="mask-2" fill="white">
+															<use xlink:href="#path-1"></use>
+														</mask>
+														<g id="Clip-2"></g>
+														<path class="fill" d="M16.68502,0.152196 L5.16318,0.152196 C2.32826,0.152196 -0.00022,2.468356 -0.00022,5.315596 L-0.00022,16.836996 C-0.00022,19.671476 2.32826,21.999956 5.16318,21.999956 L16.68502,21.999956 C19.53226,21.999956 21.84798,19.671476 21.84798,16.836996 L21.84798,5.315596 C21.84798,2.468356 19.53226,0.152196 16.68502,0.152196" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+													</g>
+													<path d="M18,3 C17.4462553,3 17,3.44703143 17,4 C17,4.55335662 17.4462553,5 18,5 C18.5529686,5 19,4.55335662 19,4 C19,3.44703143 18.5529686,3 18,3" id="Fill-4" fill="#FFFFFF"></path>
+													<path d="M10.9997814,4 C7.14054645,4 4,7.14010929 4,10.9997814 C4,14.871694 7.14054645,18 10.9997814,18 C14.871694,18 18,14.871694 18,10.9997814 C18,7.14010929 14.871694,4 10.9997814,4 M10.9997814,5.74863388 C13.8955191,5.74863388 16.2513661,8.10448087 16.2513661,10.9997814 C16.2513661,13.8955191 13.8955191,16.2513661 10.9997814,16.2513661 C8.10448087,16.2513661 5.74863388,13.8955191 5.74863388,10.9997814 C5.74863388,8.10448087 8.10448087,5.74863388 10.9997814,5.74863388" id="Fill-6" fill="#FFFFFF"></path>
+												</g>
+											</g>
+										</g>
+									</g>
+								</svg>
+							</div>
+						</a>
+						<a href="https://vimeo.com/hyperverse">
+							<div class="footerSocialElem VM">
+								<svg width="25px" height="22px" viewBox="0 0 25 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<defs>
+										<polygon id="path-1" points="0 -5.86267618e-05 24.8002811 -5.86267618e-05 24.8002811 21.6393573 0 21.6393573"></polygon>
+									</defs>
+									<g id="1366x900-ONE-EXP-light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-246.000000, -2785.000000)">
+										<g id="Футер" transform="translate(75.000000, 2644.000000)">
+											<g id="Group-2" transform="translate(0.000000, 141.000000)">
+												<g id="Page-1" transform="translate(171.000000, 0.000000)">
+													<mask id="mask-2" fill="white">
+														<use xlink:href="#path-1"></use>
+													</mask>
+													<g id="Clip-2"></g>
+													<path class="fill" d="M24.6774489,5.19043556 C23.2836267,12.9921244 15.5489156,19.6136356 13.2032267,21.1287022 C10.8971378,22.6295911 8.75287111,20.4985244 7.98873778,18.90328 C7.10433778,17.0934133 4.47704889,7.21443556 3.76669333,6.38332444 C3.09593778,5.56590222 1.00544889,7.21443556 1.00544889,7.21443556 L-0.000195555556,5.88759111 C-0.000195555556,5.88759111 4.20864889,0.847635556 7.43922667,0.217457778 C10.8306489,-0.439608889 10.8306489,5.43145778 11.6343822,8.72901333 C12.4390933,11.8926133 12.9617156,13.6887911 13.6588711,13.6887911 C14.3428267,13.6887911 15.6696711,11.9331911 17.11776,9.22523556 C18.5648711,6.51776889 17.0639822,4.11830222 14.2220711,5.83381333 C15.3611822,-0.975431111 26.05856,-2.61125333 24.6774489,5.19043556" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+												</g>
+											</g>
+										</g>
+									</g>
+								</svg>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- TABLET NAV -->
+			<div class="tabletNav">
+				<div class="tabletCross">
+					<svg width="100%" height="100%" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+									<g id="iPad-768x1024-меню-2-Copy" transform="translate(-41.000000, -24.000000)" stroke="#000000">
+											<g id="graphic-/--крест" transform="translate(42.000000, 25.000000)">
+													<g id="Group">
+															<path d="M0.772727273,0.772727273 L16.2272727,16.2272727" id="Line" stroke-width="2"></path>
+															<path d="M16.2272727,0.772727273 L0.772727273,16.2272727" id="Line" stroke-width="2"></path>
+													</g>
+											</g>
+									</g>
+							</g>
+					</svg>
+				</div>
+				<div class="tabletNav-box">
+					<div class="tabletNav-item"><a href="./catalogue.html">опыты</a></div>
+					<div class="tabletNav-item"><a href="./locations_new.html">пространства</a></div>
+					<div class="tabletNav-item"><a href="./faq.html">faq</a></div>
+					<div class="tabletNav-item"><a href="./business.html">для бизнеса</a></div>
+					<div class="tabletNav-item"><a href="./vacancy.html">вакансии</a></div>
+					<div class='tabletNav-extrabox'>
+						<div class='lang-desktop'>
+						 <div class='lang-selector' data-lang-selector='footer'>
+							 <div class='lang-selector_inner'>
+								 <span data-lang="ru" data-lang-current class='lang-selector_item selected'>РУ</span>
+								 <span data-lang="en" class="lang-selector_item">ENG</span>
+								 <span class="lang-selector_arrow" data-lang='arrow'>
+										<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+												<g id="iPad-768x1024-меню" transform="translate(-76.000000, -700.000000)" fill="#000000">
+													<g id="Button-/-Choose-/-RU" transform="translate(41.000000, 691.000000)">
+														<polygon id="Page-1-Copy-17" points="35.5 9.5 35.5 20.5 41.5 14.9997007"></polygon>
+													</g>
+												</g>
+											</g>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footerWrap footerWrap-tabletMenu">
+					<a class="mailTo" href="mailto:hello@hyperverse.io">hello@hyperverse.io</a>
+					<div class="footerTitle">
+						Подпишитесь на новости:
+					</div>
+
+					<div class="footerInput is-tablet">
+						<div class="searchBlock">
+							<form class="searchInput searchInput-tabletMenu" action="">
+								<input class="searchField" type="text" placeholder="Your e-mail" required>
+								<input class="searchButton" type="submit" value="">
+							</form>
+						</div>
+					</div>
+
+					<div class="footerBlockWrap">
+						<div class="footerBlock">
+							<div class="footerSocial">
+								<a href="https://www.facebook.com/hyperversevr">
+									<div class="footerSocialElem FB">
+										<svg width="11px" height="22px" viewBox="0 0 11 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<defs>
+												<polygon id="path-1" points="4.31372549e-05 -8.62745098e-05 10.1954902 -8.62745098e-05 10.1954902 21.7984196 4.31372549e-05 21.7984196"></polygon>
+											</defs>
+											<g id="1366x900-ONE-EXP-light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-142.000000, -2785.000000)">
+												<g id="Футер" transform="translate(75.000000, 2644.000000)">
+													<g id="Group-2" transform="translate(0.000000, 141.000000)">
+														<g id="Page-1" transform="translate(67.000000, 0.000000)">
+															<mask id="mask-2" fill="white">
+																<use xlink:href="#path-1"></use>
+															</mask>
+															<g id="Clip-2"></g>
+															<path class="fill" d="M6.72988627,6.52873725 L6.72988627,4.77822745 C6.72988627,3.93877647 7.28592549,3.73775686 7.68839608,3.73775686 L10.1364353,3.73775686 L10.1364353,-8.62745098e-05 L6.7656902,-8.62745098e-05 C3.0162,-8.62745098e-05 2.17631765,2.7676 2.17631765,4.56556078 L2.17631765,6.52873725 L4.31372549e-05,6.52873725 L4.31372549e-05,9.16614902 L4.31372549e-05,10.8933647 L2.20004314,10.8933647 L2.20004314,21.7984627 L6.56467059,21.7984627 L6.56467059,10.8933647 L9.79349412,10.8933647 L9.93541569,9.17822745 L10.1955333,6.52873725 L6.72988627,6.52873725 Z" fill="#000000" mask="url(#mask-2)"></path>
+														</g>
+													</g>
+												</g>
+											</g>
+										</svg>
+									</div>
+								</a>
+								<a href="https://www.instagram.com/hyperversevr/">
+									<div class="footerSocialElem IN">
+										<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<defs>
+												<polygon id="path-1" points="0 0.15224 21.84798 0.15224 21.84798 21.999956 0 21.999956"></polygon>
+											</defs>
+											<g id="1366x900-ONE-EXP-light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-189.000000, -2785.000000)">
+												<g id="Футер" transform="translate(75.000000, 2644.000000)">
+													<g id="Group-2" transform="translate(0.000000, 141.000000)">
+														<g id="Page-1" transform="translate(114.000000, 0.000000)">
+															<g id="Group-3">
+																<mask id="mask-2" fill="white">
+																	<use xlink:href="#path-1"></use>
+																</mask>
+																<g id="Clip-2"></g>
+																<path class="fill" d="M16.68502,0.152196 L5.16318,0.152196 C2.32826,0.152196 -0.00022,2.468356 -0.00022,5.315596 L-0.00022,16.836996 C-0.00022,19.671476 2.32826,21.999956 5.16318,21.999956 L16.68502,21.999956 C19.53226,21.999956 21.84798,19.671476 21.84798,16.836996 L21.84798,5.315596 C21.84798,2.468356 19.53226,0.152196 16.68502,0.152196" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+															</g>
+															<path d="M18,3 C17.4462553,3 17,3.44703143 17,4 C17,4.55335662 17.4462553,5 18,5 C18.5529686,5 19,4.55335662 19,4 C19,3.44703143 18.5529686,3 18,3" id="Fill-4" fill="#FFFFFF"></path>
+															<path d="M10.9997814,4 C7.14054645,4 4,7.14010929 4,10.9997814 C4,14.871694 7.14054645,18 10.9997814,18 C14.871694,18 18,14.871694 18,10.9997814 C18,7.14010929 14.871694,4 10.9997814,4 M10.9997814,5.74863388 C13.8955191,5.74863388 16.2513661,8.10448087 16.2513661,10.9997814 C16.2513661,13.8955191 13.8955191,16.2513661 10.9997814,16.2513661 C8.10448087,16.2513661 5.74863388,13.8955191 5.74863388,10.9997814 C5.74863388,8.10448087 8.10448087,5.74863388 10.9997814,5.74863388" id="Fill-6" fill="#FFFFFF"></path>
+														</g>
+													</g>
+												</g>
+											</g>
+										</svg>
+									</div>
+								</a>
+								<a href="https://vimeo.com/hyperverse">
+									<div class="footerSocialElem VM">
+										<svg width="25px" height="22px" viewBox="0 0 25 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<defs>
+												<polygon id="path-1" points="0 -5.86267618e-05 24.8002811 -5.86267618e-05 24.8002811 21.6393573 0 21.6393573"></polygon>
+											</defs>
+											<g id="1366x900-ONE-EXP-light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-246.000000, -2785.000000)">
+												<g id="Футер" transform="translate(75.000000, 2644.000000)">
+													<g id="Group-2" transform="translate(0.000000, 141.000000)">
+														<g id="Page-1" transform="translate(171.000000, 0.000000)">
+															<mask id="mask-2" fill="white">
+																<use xlink:href="#path-1"></use>
+															</mask>
+															<g id="Clip-2"></g>
+															<path class="fill" d="M24.6774489,5.19043556 C23.2836267,12.9921244 15.5489156,19.6136356 13.2032267,21.1287022 C10.8971378,22.6295911 8.75287111,20.4985244 7.98873778,18.90328 C7.10433778,17.0934133 4.47704889,7.21443556 3.76669333,6.38332444 C3.09593778,5.56590222 1.00544889,7.21443556 1.00544889,7.21443556 L-0.000195555556,5.88759111 C-0.000195555556,5.88759111 4.20864889,0.847635556 7.43922667,0.217457778 C10.8306489,-0.439608889 10.8306489,5.43145778 11.6343822,8.72901333 C12.4390933,11.8926133 12.9617156,13.6887911 13.6588711,13.6887911 C14.3428267,13.6887911 15.6696711,11.9331911 17.11776,9.22523556 C18.5648711,6.51776889 17.0639822,4.11830222 14.2220711,5.83381333 C15.3611822,-0.975431111 26.05856,-2.61125333 24.6774489,5.19043556" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+														</g>
+													</g>
+												</g>
+											</g>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tabletBlurLayer"></div>
+			<!-- TABLET NAV END -->
+		</div>
+	</div>
+	<!-- TOP NAV END -->
+
+    <!-- BODY -->
+
+	<div class="expPageWrapper">
+
+
+		<!-- <div class='topScreenBox'> -->
+      <div class="topScreen-block" id="topScreen-block">
+        <div class="topScreen-slider" data-trigger="transparent-black-menu">
+          <div class="topScreen topScreen1"><img src="./img/space.png"/></div>
+          <div class="topScreen topScreen2"><img src="./img/space.png"/></div>
+          <div class="topScreen topScreen3"><img src="./img/space.png"/></div>
+          <div class="topScreen topScreen4"><img src="./img/space.png"/></div>
+        </div>
+      </div>
+		<!-- 10 -->
+
+		<div class="descr">
+			<div class="descriptionMain">
+				<div class="descrTitle">
+					<div class="descrTitleText">Центр Марс</div>
+                    <div class="descrTitleLogoMob"></div>
+				</div>
+
+				<div class="descriptionBox">
+					<div class="descriptionCell">
+						<span class="descriptionCellTitle">Время работы:</span>
+						<span class="descriptionCellText">пн — вс&nbsp; <nobr>12:00 — 22:00</nobr></span>
+					</div>
+					<div class="descriptionCell">
+						<span class="descriptionCellTitle">Площадь:</span>
+						<span class="descriptionCellText">350 м<sup>2</sup></span>
+					</div>
+					<div class="descriptionCell">
+						<span class="descriptionCellTitle">Телефон:</span>
+						<span class="descriptionCellText">+7 495 623 66 90</span>
+					</div>
+					<div class="descriptionCell">
+						<span class="descriptionCellTitle">Сайт:</span>
+						<a href="http://centermars.ru" class="descriptionCellText">centermars.ru</a>
+					</div>
+					<div class="descriptionCell">
+						<span class="descriptionCellTitle">Адрес:</span>
+						<a class="descriptionCellText">Москва, переулок <nobr>Пушкарева 5</nobr></a>
+					</div>
+					<div class="descriptionCell">
+						<span class="descriptionCellTitle">Метро:</span>
+						<span class="descriptionCellText">Сухаревская, Чистые пруды</span>
+					</div>
+				</div>
+
+				<div class="descrBody">
+					Центр МАРС — это пространство эксперимента и диалога. Междисциплинарные проекты Центра ориентированы на вовлечение зрителя в интерактивную среду и взаимодействие с окружающим миром через искусство. это одна из первых негосударственных галерей современного искусства, появившихся еще в советском пространстве в 1988 году.
+				</div>
+			</div>
+			<div class="descriptionSecondary">
+				<div class="descriptionButton">
+					<p>Посмотреть расписание</p>
+				</div>
+				<a href="http://centermars.ru" class="descriptionSecondaryLogo"></a>
+			</div>
+		</div>
+
+		<div class="otherExpWrap for-location">
+			<div class="otherExpTitle">доступные опыты</div>
+			<div class="otherExp">
+				<a href="./location_new.html">
+					<div class="otherExpElem">
+						<div class="otherExpElemImg otherExp_1"><img src='./img/otherExp_1.png' alt='game screenshot' /></div>
+						<div class="otherExpElemTitle">London Heist</div>
+						<div class="otherExpElemDescr">Приключение, экшн, 20 минут, для 2-х игроков</div>
+					</div>
+				</a>
+				<a href="./location_new.html">
+					<div class="otherExpElem">
+						<div class="otherExpElemImg otherExp_2">
+							<img src='./img/otherExp_2.png' alt='game screenshot' />
+						</div>
+						<div class="otherExpElemTitle">
+							Killing floor: incursion
+						</div>
+						<div class="otherExpElemDescr">
+							Квест, 40 минут, для 4-х игроков
+						</div>
+					</div>
+				</a>
+				<a href="./location_new.html">
+					<div class="otherExpElem">
+						<div class="otherExpElemImg otherExp_3">
+							<img src='./img/otherExp_3.png' alt='game screenshot' />
+						</div>
+						<div class="otherExpElemTitle">
+							What Did I Do to Deserve This, My Lord?
+						</div>
+						<div class="otherExpElemDescr">
+							Приключение, экшн, 20 минут, для 2-х игроков
+						</div>
+					</div>
+				</a>
+				<a href="./location_new.html">
+					<div class="otherExpElem">
+						<div class="otherExpElemImg otherExp_1">
+							<img src='./img/otherExp_1.png' alt='game screenshot' />
+						</div>
+						<div class="otherExpElemTitle">
+							London Heist
+						</div>
+						<div class="otherExpElemDescr">
+							Приключение, экшн, 20 минут, для 2-х игроков
+						</div>
+					</div>
+				</a>
+				<a href="./location_new.html">
+					<div class="otherExpElem">
+						<div class="otherExpElemImg otherExp_2">
+							<img src='./img/otherExp_2.png' alt='game screenshot' />
+						</div>
+						<div class="otherExpElemTitle">
+							Killing floor: incursion
+						</div>
+						<div class="otherExpElemDescr">
+							Квест, 40 минут, для 4-х игроков
+						</div>
+					</div>
+				</a>
+				<a href="./location_new.html">
+					<div class="otherExpElem">
+						<div class="otherExpElemImg otherExp_3">
+							<img src='./img/otherExp_3.png' alt='game screenshot' />
+						</div>
+						<div class="otherExpElemTitle">
+							What Did I Do to Deserve This, My Lord?
+						</div>
+						<div class="otherExpElemDescr">
+							Приключение, экшн, 20 минут, для 2-х игроков
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+		<div class="footerWrap bottom" data-trigger='hide-menu'>
+			<div class="footerTitle">
+				Подпишитесь на новости:
+			</div>
+
+			<div class="footerInput">
+				<div class="searchBlock">
+					<div class="footerLeftCol">
+						<form class="searchInput" action="">
+							<input class="searchField" type="text" placeholder="Your e-mail" required>
+							<input class="searchButton" type="submit" value="">
+						</form>
+						<div class="footerSocial">
+							<a href="https://www.facebook.com/hyperversevr">
+								<div class="footerSocialElem FB">
+									<svg width="11px" height="22px" viewBox="0 0 11 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<defs>
+													<polygon id="path-1" points="4.31372549e-05 -8.62745098e-05 10.1954902 -8.62745098e-05 10.1954902 21.7984196 4.31372549e-05 21.7984196"></polygon>
+											</defs>
+											<g id="1366x900-ONE-EXP-light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-142.000000, -2785.000000)">
+													<g id="Футер" transform="translate(75.000000, 2644.000000)">
+															<g id="Group-2" transform="translate(0.000000, 141.000000)">
+																	<g id="Page-1" transform="translate(67.000000, 0.000000)">
+																			<mask id="mask-2" fill="white">
+																					<use xlink:href="#path-1"></use>
+																			</mask>
+																			<g id="Clip-2"></g>
+																			<path class="fill" d="M6.72988627,6.52873725 L6.72988627,4.77822745 C6.72988627,3.93877647 7.28592549,3.73775686 7.68839608,3.73775686 L10.1364353,3.73775686 L10.1364353,-8.62745098e-05 L6.7656902,-8.62745098e-05 C3.0162,-8.62745098e-05 2.17631765,2.7676 2.17631765,4.56556078 L2.17631765,6.52873725 L4.31372549e-05,6.52873725 L4.31372549e-05,9.16614902 L4.31372549e-05,10.8933647 L2.20004314,10.8933647 L2.20004314,21.7984627 L6.56467059,21.7984627 L6.56467059,10.8933647 L9.79349412,10.8933647 L9.93541569,9.17822745 L10.1955333,6.52873725 L6.72988627,6.52873725 Z" fill="#000000" mask="url(#mask-2)"></path>
+																	</g>
+															</g>
+													</g>
+											</g>
+									</svg>
+								</div>
+							</a>
+							<a href="https://www.instagram.com/hyperversevr/">
+								<div class="footerSocialElem IN">
+									<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<defs>
+													<polygon id="path-1" points="0 0.15224 21.84798 0.15224 21.84798 21.999956 0 21.999956"></polygon>
+											</defs>
+											<g id="1366x900-ONE-EXP-light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-189.000000, -2785.000000)">
+													<g id="Футер" transform="translate(75.000000, 2644.000000)">
+															<g id="Group-2" transform="translate(0.000000, 141.000000)">
+																	<g id="Page-1" transform="translate(114.000000, 0.000000)">
+																			<g id="Group-3">
+																					<mask id="mask-2" fill="white">
+																							<use xlink:href="#path-1"></use>
+																					</mask>
+																					<g id="Clip-2"></g>
+																					<path class="fill" d="M16.68502,0.152196 L5.16318,0.152196 C2.32826,0.152196 -0.00022,2.468356 -0.00022,5.315596 L-0.00022,16.836996 C-0.00022,19.671476 2.32826,21.999956 5.16318,21.999956 L16.68502,21.999956 C19.53226,21.999956 21.84798,19.671476 21.84798,16.836996 L21.84798,5.315596 C21.84798,2.468356 19.53226,0.152196 16.68502,0.152196" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+																			</g>
+																			<path d="M18,3 C17.4462553,3 17,3.44703143 17,4 C17,4.55335662 17.4462553,5 18,5 C18.5529686,5 19,4.55335662 19,4 C19,3.44703143 18.5529686,3 18,3" id="Fill-4" fill="#FFFFFF"></path>
+																			<path d="M10.9997814,4 C7.14054645,4 4,7.14010929 4,10.9997814 C4,14.871694 7.14054645,18 10.9997814,18 C14.871694,18 18,14.871694 18,10.9997814 C18,7.14010929 14.871694,4 10.9997814,4 M10.9997814,5.74863388 C13.8955191,5.74863388 16.2513661,8.10448087 16.2513661,10.9997814 C16.2513661,13.8955191 13.8955191,16.2513661 10.9997814,16.2513661 C8.10448087,16.2513661 5.74863388,13.8955191 5.74863388,10.9997814 C5.74863388,8.10448087 8.10448087,5.74863388 10.9997814,5.74863388" id="Fill-6" fill="#FFFFFF"></path>
+																	</g>
+															</g>
+													</g>
+											</g>
+									</svg>
+								</div>
+							</a>
+							<a href="https://vimeo.com/hyperverse">
+								<div class="footerSocialElem VM">
+									<svg width="25px" height="22px" viewBox="0 0 25 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<defs>
+													<polygon id="path-1" points="0 -5.86267618e-05 24.8002811 -5.86267618e-05 24.8002811 21.6393573 0 21.6393573"></polygon>
+											</defs>
+											<g id="1366x900-ONE-EXP-light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-246.000000, -2785.000000)">
+													<g id="Футер" transform="translate(75.000000, 2644.000000)">
+															<g id="Group-2" transform="translate(0.000000, 141.000000)">
+																	<g id="Page-1" transform="translate(171.000000, 0.000000)">
+																			<mask id="mask-2" fill="white">
+																					<use xlink:href="#path-1"></use>
+																			</mask>
+																			<g id="Clip-2"></g>
+																			<path class="fill" d="M24.6774489,5.19043556 C23.2836267,12.9921244 15.5489156,19.6136356 13.2032267,21.1287022 C10.8971378,22.6295911 8.75287111,20.4985244 7.98873778,18.90328 C7.10433778,17.0934133 4.47704889,7.21443556 3.76669333,6.38332444 C3.09593778,5.56590222 1.00544889,7.21443556 1.00544889,7.21443556 L-0.000195555556,5.88759111 C-0.000195555556,5.88759111 4.20864889,0.847635556 7.43922667,0.217457778 C10.8306489,-0.439608889 10.8306489,5.43145778 11.6343822,8.72901333 C12.4390933,11.8926133 12.9617156,13.6887911 13.6588711,13.6887911 C14.3428267,13.6887911 15.6696711,11.9331911 17.11776,9.22523556 C18.5648711,6.51776889 17.0639822,4.11830222 14.2220711,5.83381333 C15.3611822,-0.975431111 26.05856,-2.61125333 24.6774489,5.19043556" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+																	</g>
+															</g>
+													</g>
+											</g>
+									</svg>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="searchCity">
+						<div class='lang-desktop'>
+						 <div class='lang-selector' data-lang-selector='footer'>
+							 <div class='lang-selector_inner'>
+								 <span data-lang="ru" data-lang-current class='lang-selector_item selected'>РУ</span>
+								 <span data-lang="fr" class="lang-selector_item">ENG</span>
+								 <span class="lang-selector_arrow" data-lang='arrow'>
+										<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+														<g id="iPad-768x1024-меню" transform="translate(-76.000000, -700.000000)" fill="#000000">
+																<g id="Button-/-Choose-/-RU" transform="translate(41.000000, 691.000000)">
+																		<polygon id="Page-1-Copy-17" points="35.5 9.5 35.5 20.5 41.5 14.9997007"></polygon>
+																</g>
+														</g>
+												</g>
+										</svg>
+								 </span>
+							 </div>
+						 </div>
+					 </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footerBlockWrap page-bottom">
+				<div class="footerBlock page-bottom">
+					<div class="footerCopyright">
+						<a href="./index.html">
+							<svg viewBox="0 0 212 185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<g id="1366х900-faq-close" transform="translate(-74.000000, -1140.000000)" fill="#000000">
+													<g id="Group-4" transform="translate(74.000000, 757.000000)">
+															<g id="Branding-/-Sign-big-use-/--1" transform="translate(0.000000, 383.000000)">
+																	<path d="M204.287414,54.2650076 L192.964783,67.3291469 C189.808399,70.3577983 190.311837,73.4091931 184.451598,77.2376511 C182.860207,78.2629956 180.182749,76.6425344 181.608213,74.3814698 C182.543437,73.0490906 184.034895,71.8342185 183.169435,71.1424427 C182.30586,70.4506669 181.672321,72.626444 181.170769,73.2272466 C180.109213,74.629751 178.529136,74.4781289 177.341249,73.7958294 C175.955382,73.0528812 174.707159,72.5676904 176.930203,70.8714182 L178.768599,69.381731 C182.715021,66.8932333 177.97856,67.0334838 176.924546,64.0863292 C179.057085,63.762237 181.116088,63.0458225 183.316506,63.2978943 C185.846893,63.5878715 185.982651,66.5407119 187.16111,65.5400061 C188.135931,64.7174562 185.763929,63.5461755 186.078813,62.1664143 C186.372957,60.8795218 203.570911,46.9132311 208.49404,44.4171522 C209.499029,47.3415635 207.551273,50.5142559 204.287414,54.2650076 Z M175.052211,68.9666655 L172.580276,71.1026419 C171.381077,70.0943549 166.048787,72.1450438 163.565539,71.9365634 C161.549903,71.7678839 160.365788,69.5428295 161.193537,67.6854588 C161.351922,67.3272516 161.834619,66.4061473 161.951522,66.1749236 L173.885066,67.0505413 C174.654364,67.1092948 175.638612,68.4606268 175.052211,68.9666655 Z M174.874971,65.4850431 C174.878742,65.4964147 174.884399,65.5077864 174.88817,65.5172628 L174.863658,65.5153675 L174.874971,65.4850431 Z M156.543811,69.2642239 C155.823537,72.6927787 152.640756,75.006911 149.16006,74.7908495 C146.899305,74.6524943 140.352732,74.218476 138.090091,73.9266035 C126.292306,72.3971156 118.124173,69.7399383 110.02769,67.1604673 C105.932311,65.8527267 104.659576,67.2286972 106.298104,67.954588 C110.536785,69.8290162 115.83702,73.0073945 111.528575,73.024452 C109.362097,73.0320331 107.238986,73.0301378 105.327055,72.9960229 C98.7258005,72.8766205 96.2142694,71.9289823 94.4060424,69.2888625 C93.4010528,67.8200234 93.3294025,68.7411277 92.9937775,69.7134044 C92.5073098,71.1253852 91.9963301,73.7162278 90.5463546,73.7313901 C86.034272,73.7749814 87.733138,65.8337739 85.808008,65.8318786 C84.8011329,65.8318786 85.1801252,75.1604283 81.6428637,77.5788008 C81.2544437,77.1334109 73.8612654,69.5371437 70.4918164,67.8920439 C71.0782174,67.3329374 72.7921677,65.663199 73.3559423,65.1192548 C82.5705463,56.2133516 87.3145495,56.291058 102.34414,57.9323672 C106.67144,58.404291 151.946879,62.8373421 159.1911,63.5689188 C158.114461,65.1514744 157.416813,65.1116736 156.543811,69.2642239 Z M111.996188,106.233483 C110.674429,107.150796 109.316844,108.634798 108.085591,110.342441 C105.138501,114.428657 99.811868,118.450433 93.8837495,112.072829 C87.701084,105.418514 80.7924879,95.492952 78.1188009,91.5564632 C73.7801874,85.1693822 73.8254403,88.1771857 76.6876807,92.5306352 C78.2243908,94.8675108 84.893524,103.64643 83.7131798,104.616812 C83.0909537,105.128536 71.7343832,92.5306352 65.1802675,82.8116586 C64.0791157,81.1741399 63.5775637,82.0725008 63.5700216,83.4048801 C63.5587084,85.1978114 62.4141893,89.2366451 61.0000389,89.6251767 C59.3426546,90.0781477 60.170404,81.8545441 58.0604916,82.6107593 C55.9524648,83.3669745 50.203472,90.2430368 39.6803075,98.3320758 C35.0418942,101.898986 29.5870447,103.936408 28.0031963,102.118838 C26.455173,100.339173 30.3657702,88.4899062 36.2901176,83.5299683 C47.0188053,74.5520447 51.5987671,72.8576677 52.8073943,72.0199556 C60.3514153,66.7889931 68.6270234,66.6241041 74.898309,73.4395175 C76.7932706,75.4977875 82.6346545,82.1123016 84.9783731,84.5060356 C89.622443,89.2537026 95.0735214,94.2458602 100.398269,98.5822523 C104.789677,102.160534 108.340138,104.084239 111.996188,106.233483 Z M122.60043,126.167998 C122.730532,126.679723 122.90023,128.434749 123.052958,130.269376 C123.186831,131.889837 121.927295,131.235967 119.626943,129.187173 C116.568607,126.467452 114.015595,124.077508 110.812073,121.748214 C107.842357,119.593285 106.903361,116.005527 108.79078,112.849892 C108.994418,112.508742 109.177315,112.205498 109.328157,111.953426 L122.60043,126.167998 Z M129.550508,103.788576 C130.17462,102.130209 132.73706,100.89828 133.926832,102.20602 C136.741934,105.302902 139.583434,114.400228 138.665179,118.228686 C138.295614,119.775231 137.628135,121.314196 136.855066,122.383132 C135.043068,124.888687 133.295178,126.821868 131.726414,127.411299 C129.120606,128.383576 130.525329,129.901692 132.512682,128.912358 C132.995378,128.669763 133.728851,127.075836 134.635793,126.507253 C136.3554,125.430736 136.830554,127.189552 136.817356,128.267964 C136.741934,134.804772 134.50192,142.706179 133.489388,143.646236 C132.344869,144.711381 130.704455,141.197539 130.287752,134.073195 C130.240613,133.275284 129.810712,132.538022 129.382696,131.675671 C128.521007,129.932017 127.612179,127.883223 127.531101,124.062346 C127.434939,119.555379 127.651775,108.833802 129.550508,103.788576 Z M209.248253,41.9817222 C206.103183,43.1833274 187.294983,56.6985424 182.786671,59.9603128 L175.09935,61.5959362 C173.30055,61.9086568 174.113215,63.7527606 174.873086,65.4812525 L173.822843,65.4206037 L163.073415,64.6492262 C163.073415,63.8626866 162.221153,61.9181332 161.461283,61.8423221 C161.185995,61.813893 137.447124,59.7025552 116.649685,57.5097206 C123.918418,29.3231721 122.449588,5.79521271 114.967789,1.31477965 C102.351682,-6.24358206 62.4933817,18.9654874 28.8403733,73.4035073 C24.2358996,80.8519429 20.2593087,88.3212267 16.8370647,95.6730032 C15.7528828,97.3806472 15.0495786,99.0105847 14.651731,100.52112 C-3.2155879,141.565222 -3.34003313,177.802904 6.76077178,183.850731 C18.3322931,190.781756 55.7544837,165.874036 86.1474041,122.345226 C89.3924078,124.983451 100.737665,133.318875 104.078831,135.416946 C105.298772,136.184533 107.614207,135.574254 109.709035,130.095011 L123.744949,139.66426 C127.037091,143.725837 128.490838,149.153909 132.863391,147.154392 C137.96376,144.819412 138.995147,125.447793 139.327001,124.956917 C139.466531,124.81098 140.607279,123.12987 141.065463,118.831384 C141.419944,115.507069 139.055484,104.840454 135.422061,101.264068 C133.772218,99.6398165 132.069581,99.8880976 130.836442,100.181865 C125.967994,101.334193 122.836122,116.151463 122.419419,123.275807 L114.524689,114.870256 C115.250619,112.887797 115.87096,109.838298 115.916213,107.344114 C115.931297,106.436277 115.6051,105.566345 114.773579,105.213824 C110.685742,103.47396 107.274811,101.650705 101.227904,96.666128 C102.96071,93.2830599 104.727455,89.9416879 105.879516,87.4020177 L158.463284,89.1020805 L158.527392,89.1020805 C159.128878,89.1020805 159.694538,88.8196843 160.058446,88.3382841 C160.290367,88.0293541 160.409155,87.6635658 160.431782,87.2901964 C161.66115,85.0594562 163.001764,80.406553 163.544798,78.5851925 C163.544798,78.5851925 164.487565,78.4278846 165.799897,78.5529728 C166.250539,78.67048 166.74832,78.8770651 167.34792,79.2295865 C169.148605,82.6050735 172.301217,85.6261438 176.822728,86.992638 C176.822728,86.992638 178.063409,88.4557913 179.930087,89.7957516 C182.956369,91.9677382 191.196152,84.3449371 195.016244,73.0092898 L207.48905,57.1704661 C213.635891,49.8755478 212.762889,44.5517168 209.248253,41.9817222 Z" id="Page-1"></path>
+															</g>
+													</g>
+											</g>
+									</g>
+							</svg>
+						</a>
+					</div>
+					<div class="footerLinks page-bottom for-tablet">
+						<a href="./none.html">положение <br>о персональных данных</a>
+					</div>
+					<a class="mailTo mailTo--mobile" href="mailto:hello@hyperverse.io">hello@hyperverse.io</a>
+					<div class="footerCopyrightText">&copy; 2018 Difference Engine Inc.</div>
+				</div>
+
+				<div class="footerBlock page-bottom footerBlock--right">
+					<div class="footerLinks">
+						<a href="./catalogue.html">
+							<div class="footerLink">
+								опыты
+							</div>
+						</a>
+						<a href="./locations_new.html">
+							<div class="footerLink">
+								пространства
+							</div>
+						</a>
+						<a href="./faq.html">
+							<div class="footerLink">
+								faq
+							</div>
+						</a>
+					</div>
+					<div class="footerLinks">
+						<a href="./business.html">
+							<div class="footerLink">для бизнеса</div>
+						</a>
+						<a href="./vacancy.html">
+							<div class="footerLink">вакансии</div>
+						</a>
+					</div>
+					<div class="footerLinks">
+						<a href="./none.html">
+							<div class="footerLink">положение <br>о персональных данных</div>
+						</a>
+						<a class="mailTo" href="mailto:hello@hyperverse.io">hello@hyperverse.io</a>
+					</div>
+					<div class="footerLinksCopyright page-bottom">
+						<p>Developed by <a class="is-underline" href="https://shuka.design/">Shuka Design</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- FOOTER END -->
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/location_new/index.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="15px" viewBox="0 0 11 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,5.58404 C0,9.353344 5.22377778,15.037176 5.22377778,15.037176 C5.22377778,15.037176 10.4469444,9.23384 10.4469444,5.58404 C10.4469444,2.763376 8.10822222,0.476168 5.22377778,0.476168 C2.33872222,0.476168 0,2.763376 0,5.58404 Z" id="path-1"></path>
+        <path d="M0.228571429,2.47214286 C0.228571429,3.70785714 1.26142857,4.70928571 2.53357143,4.70928571 C3.80642857,4.70928571 4.84,3.70785714 4.84,2.47214286 C4.84,1.23642857 3.80642857,0.235714286 2.53357143,0.235714286 C1.26142857,0.235714286 0.228571429,1.23642857 0.228571429,2.47214286 Z" id="path-3"></path>
+    </defs>
+    <g id="1366x900-locations-7-copy-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1282.000000, -311.000000)">
+        <g id="Group" transform="translate(73.000000, 304.000000)">
+            <g id="Page-1-Copy-2" transform="translate(1209.000000, 7.000000)">
+                <g id="Group-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <polygon id="Fill-1" fill="#000000" mask="url(#mask-2)" points="-3.05555556 18.11656 13.5025 18.11656 13.5025 -2.603832 -3.05555556 -2.603832"></polygon>
+                </g>
+                <g id="Group-6" transform="translate(3.000000, 3.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-5"></g>
+                    <polygon id="Fill-4" fill="#FEFEFE" mask="url(#mask-4)" points="-3.34285714 8.28071429 8.41142857 8.28071429 8.41142857 -3.33571429 -3.34285714 -3.33571429"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

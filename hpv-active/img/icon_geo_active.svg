@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<svg width="19px" height="26px" viewBox="0 0 19 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svgMarker">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <style type="text/css">
+        .firstp {
+          fill: black;
+        }
+        .svgMarker:hover > .firstp{
+          fill: red;
+        }
+    </style>
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.000555555556 0.000433333333 18.9877778 0.000433333333 18.9877778 25.5649333 0.000555555556 25.5649333"></polygon>
+    </defs>
+    <g id="1366x900-copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-109.000000, -169.000000)">
+        <g id="Page-1" transform="translate(109.000000, 169.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g fill="yellow" id="Clip-2"></g>
+            <path class="firstp" d="M9.49388889,12.1080917 C7.41277778,12.1080917 5.72611111,10.4635917 5.72611111,8.43450833 C5.72611111,6.40650833 7.41277778,4.76200833 9.49388889,4.76200833 C11.575,4.76200833 13.2616667,6.40650833 13.2616667,8.43450833 C13.2616667,10.4635917 11.575,12.1080917 9.49388889,12.1080917 M9.49388889,-0.000325 C4.25055556,-0.000325 0.000555555556,4.01559167 0.000555555556,8.96859167 C0.000555555556,16.707925 9.49388889,25.5652583 9.49388889,25.5652583 C9.49388889,25.5652583 18.9883333,16.707925 18.9883333,8.96859167 C18.9883333,4.01559167 14.7372222,-0.000325 9.49388889,-0.000325" id="Fill-1" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

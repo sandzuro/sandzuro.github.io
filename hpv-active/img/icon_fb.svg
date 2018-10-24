@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="22px" viewBox="0 0 11 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="4.31372549e-05 -8.62745098e-05 10.1954902 -8.62745098e-05 10.1954902 21.7984196 4.31372549e-05 21.7984196"></polygon>
+    </defs>
+    <g id="1366x900-ONE-EXP-light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-142.000000, -2785.000000)">
+        <g id="Футер" transform="translate(75.000000, 2644.000000)">
+            <g id="Group-2" transform="translate(0.000000, 141.000000)">
+                <g id="Page-1" transform="translate(67.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M6.72988627,6.52873725 L6.72988627,4.77822745 C6.72988627,3.93877647 7.28592549,3.73775686 7.68839608,3.73775686 L10.1364353,3.73775686 L10.1364353,-8.62745098e-05 L6.7656902,-8.62745098e-05 C3.0162,-8.62745098e-05 2.17631765,2.7676 2.17631765,4.56556078 L2.17631765,6.52873725 L4.31372549e-05,6.52873725 L4.31372549e-05,9.16614902 L4.31372549e-05,10.8933647 L2.20004314,10.8933647 L2.20004314,21.7984627 L6.56467059,21.7984627 L6.56467059,10.8933647 L9.79349412,10.8933647 L9.93541569,9.17822745 L10.1955333,6.52873725 L6.72988627,6.52873725 Z" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

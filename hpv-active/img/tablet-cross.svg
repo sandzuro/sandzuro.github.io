@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="graphic-/--крест-copy-2" stroke="#000000">
+            <g id="Group">
+                <path d="M0.681818182,0.681818182 L14.3181818,14.3181818" id="Line"></path>
+                <path d="M14.3181818,0.681818182 L0.681818182,14.3181818" id="Line"></path>
+            </g>
+        </g>
+    </g>
+</svg>

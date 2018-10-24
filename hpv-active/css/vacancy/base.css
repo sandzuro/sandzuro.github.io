@@ -1,0 +1,420 @@
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+.expPageWrapper {
+  padding: 0 73px 0 73px;
+  font-family: "Aeroport";
+  margin: 0 auto 150px auto;
+  max-width: 1220px;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-top: 15px;
+    max-width: 767px;
+    overflow: hidden;
+    padding: 0 15px 0 15px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1025px) {
+    max-width: 940px;
+    padding: 0 43px 0 43px;
+    margin-bottom: 61px;
+  }
+
+  @media screen and (min-width: 1026px) and (max-width: 1365px) {
+    max-width: 1024px;
+    padding: 0 43px 0 43px;
+    margin-bottom: 33px;
+  }
+
+  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+    max-width: 1220px;
+    margin-bottom: 33px;
+  }
+
+  @media screen and (min-width: 1600px) and (max-width: 1919px) {
+    max-width: 1359px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .expPageWrapper,
+  .topNav {
+    max-width: 1680px;
+  }
+}
+
+.light {
+  color: #fff;
+}
+.dark {
+  color: #000;
+}
+
+/*HOVER MENU BLOCK*/
+.menuActive {
+  display: flex;
+  justify-content: space-between;
+
+  .menuElemNav {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  &:hover {
+    border-bottom-color: #000;
+    cursor: pointer !important;
+    opacity: .6;
+    transition: border-bottom-color 0.3s ease;
+  }
+}
+
+.menuHidden {
+  display: none;
+  flex-direction: column;
+  margin-top: 3px;
+}
+.menuElemNav {
+  display: inline-block;
+  opacity: .6;
+  padding: 13px 0;
+}
+.menuHidden .menuElemNav:hover {
+  opacity: 1;
+}
+#topMenuElem {
+  padding: 0;
+  opacity: 1;
+}
+
+.isOpen {
+  cursor: pointer !important;
+  transition: all .3s ease;
+}
+.cityIconWhite {
+  background: url('../../img/icon_arrow_down_white.svg') right no-repeat;
+}
+.cityIconDark {
+  background: url('../../img/icon_arrow_down.svg') right no-repeat;
+}
+
+/*BODY*/
+.wrapper {
+  margin-top: 99px;
+  transition: visibility .1s linear;
+}
+.pageTitle {
+  font-size: 30px;
+  font-family: "Aeroport-bold";
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+.columnsWrapper {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+@media screen and (min-width: 320px) and (max-width: 766px) {
+  .columnsWrapper {
+    display: block;
+  }
+}
+
+.leftCol {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  top: 109px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 45%;
+  min-width: 334px;
+  max-width: 680px;
+  margin: 63px 129px 0 0;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-top: 55px;
+    min-width: auto;
+    max-width: auto;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin: 57px 129px 0 0;
+    width: 72%;
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    margin-right: 63px;
+  }
+
+  @media screen and (min-width: 1600px) and (max-width: 1919px) {
+    margin: 50px 82px 0 0;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin: 50px 179px 0 0;
+  }
+}
+.rightCol {
+  width: 55%;
+  max-width: 595px;
+  margin-top: 65px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .rightCol {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .rightCol {
+    width: 100%;
+  }
+}
+.department {
+  position: relative;
+  letter-spacing: .2px;
+  line-height: 50px;
+  max-width: 493px;
+
+  &:nth-of-type(1) {
+    margin-top: -11px;
+  }
+  @media screen and (max-width: 766px) {
+    max-width: none;
+  }
+  @media screen and (min-width: 1600px) and (max-width: 1919px) {
+    max-width: 550px;
+  }
+  @media screen and (min-width: 1920px) {
+    max-width: 683px;
+  }
+}
+.department::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #9D9D9D;
+  position: absolute;
+  margin-top: 7px;
+  left: 0;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .department::after {
+    margin-top: 3px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .department::after {
+    margin-top: 4px;
+  }
+}
+.departmentTitle {
+  position: relative;
+  font-size: 30px;
+  padding-top: 20px;
+  line-height: 42px;
+  letter-spacing: .42px;
+  font-family: "Aeroport-bold";
+  cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .departmentTitle {
+    padding-top: 9px;
+    font-size: 21px;
+  }
+}
+.departmentTitle:hover h2 {
+  opacity: .6;
+  transition: .3s all ease;
+}
+@media screen and (max-width: 766px) {
+  .departmentTitle {
+    font-size: 19px;
+    padding-top: 11px;
+  }
+  .departmentTitle:hover h2 {
+    opacity: 1;
+  }
+}
+.departmentTitle span {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-image: url(../../img/dep_arrow_down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 17px;
+  height: 9px;
+  transition: all .3s ease;
+  -webkit-transform: translate(0%, 0%) rotate(0deg);
+  transform: translate(0%, 0%) rotate(0deg);
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .departmentTitle span {
+    top: 27px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .departmentTitle span {
+    top: 28px;
+  }
+}
+@media screen and (min-width: 766px) {
+  .departmentTitle:hover span {
+    opacity: .6;
+    -webkit-transform: translate(0%, 70%) rotate(0deg) !important;
+    transform: translate(0%, 70%) rotate(0deg) !important;
+  }
+  .department.active .departmentTitle:hover span {
+    -webkit-transform: translate(0%, 0%) rotate(180deg) !important;
+    transform: translate(0%, 0%) rotate(180deg) !important;
+  }
+}
+.departnmentVacancies {
+  display: none;
+  margin: 25px 0 20px 105px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .departnmentVacancies {
+    margin: 25px 0 20px 60px;
+  }
+}
+@media screen and (max-width: 766px) {
+  .departnmentVacancies {
+    margin: 20px 0 20px 60px;
+  }
+}
+.departmentPosition {
+  font-size: 17px;
+  letter-spacing: .4px;
+  line-height: 32px;
+  cursor: pointer;
+  transition: .3s all ease;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .departmentPosition {
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 766px) {
+  .departmentPosition {
+    line-height: 36px;
+  }
+}
+@media screen and (min-width: 766px) {
+  .departmentPosition:hover {
+    opacity: .6;
+  }
+  .deactivePos {
+    opacity: 1;
+  }
+  .activePos {
+    opacity: .6;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .departmentPosition {
+    font-size: 19px;
+    line-height: 34px;
+  }
+}
+.vacancy {
+  display: none;
+  opacity: 0;
+  transition: all .3s ease;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .vacancy {
+    position: absolute;
+    background-color: #fff;
+    min-height: 100%;
+    padding-bottom: 70px;
+    top: 55px;
+    width: calc(100% - 30px);
+  }
+}
+.vacancyTitle {
+  font-family: "Aeroport-bold";
+  font-size: 50px;
+  letter-spacing: .42px;
+  line-height: 55px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .vacancyTitle {
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 5px;
+  }
+}
+.vacancySubtitle {
+  font-size: 21px;
+  line-height: 27px;
+  letter-spacing: .4px;
+  margin-top: 37px;
+  font-family: "Aeroport-bold";
+}
+.vacancyText {
+  font-size: 17px;
+  letter-spacing: .4px;
+  line-height: 27px;
+}
+@media (max-width: 767px) {
+  .vacancyText {
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .vacancyText {
+    font-size: 19px;
+    line-height: 31px;
+  }
+}
+.vacancyContact {
+  margin-top: 70px;
+  font-size: 21px;
+  line-height: 27px;
+  letter-spacing: .4px;
+  font-family: "Aeroport-bold";
+}
+.vacancyContact a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 7px;
+}
+.toShow {
+  display: block;
+  opacity: 1;
+  transition: all .3s ease;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .vacancyTitle {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .vacancySubtitle {
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: .29px;
+  }
+  .vacancyText {
+    font-size: 16px;
+    letter-spacing: .27px;
+    line-height: 25px;
+  }
+}

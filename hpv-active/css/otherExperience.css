@@ -1,0 +1,400 @@
+.otherExpWrap {
+  border-top: 1px solid #979797;
+  margin: 0 auto;
+  width: 100%;
+
+  &.for-location {
+    border-top: none;
+  }
+
+  @media screen and (max-width:766px) {
+    width: calc(100vw - 30px);
+  }
+
+  @media screen and (min-width:1920px) {
+    margin: 0;
+  }
+}
+
+.otherExpTitle {
+  font-family: "Aeroport-Bold";
+	font-size: 30px;
+	margin-bottom: 68px;
+  margin-top: 67px;
+  @media screen and (min-width: 1920px) {
+    .otherExpTitle {
+      margin-top: 82px;
+      margin-bottom: 83px;
+    }
+  }
+
+  @media screen and (min-width:767px) and (max-width:1022px) {
+    font-size: 22px;
+  }
+}
+
+.otherExp {
+	display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .slick-list {
+    width: 100%;
+
+    @media screen and (min-width:767px) and (max-width:1022px) {
+      overflow: visible;
+    }
+    @media (max-width:766px) {
+      overflow: visible;
+    }
+  }
+
+  .slick-track {
+    margin-left: -25px;
+
+    @media screen and (min-width:767px) and (max-width:1022px) {
+      margin-left: 0;
+    }
+
+    @media screen and (min-width:1024px) and (max-width:1365px) {
+      margin-left: -15px;
+    }
+  }
+
+  a {
+    outline: none;
+    color: #000;
+  }
+
+  a:visited {
+    color: #000;
+  }
+
+  @media screen and (min-width:1600px) {
+    justify-content: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  @media screen and (min-width:1920px) {
+    width: 1645px;
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+    justify-content: unset;
+    width: 100%;
+  }
+
+  @media screen and (min-width:767px) and (max-width:937px) {
+    justify-content: unset;
+    margin-left: -15px;
+    width: calc(100vw - 43px + 15px);
+    padding-right: calc(100vw - 86px - 313px - 313px);
+  }
+
+  @media (min-width: 938px) and (max-width: 1022px) {
+    justify-content: unset;
+    margin-left: -15px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  @media (max-width:766px) {
+    width: calc(100vw - 15px);
+    padding-right: 25vw;
+  }
+}
+
+.expBlockArrowLeft {
+  cursor: pointer !important;
+  position: absolute;
+  left: -28px;
+  transition: .3s ease;
+  width: 15px;
+
+  .arrowLeft {
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .arrowLeft svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 1022px) {
+    left: 0;
+    height: 35px;
+    bottom: -45px;
+  }
+
+  @media (min-width: 1025px) and (max-width: 1220px) {
+    left: -34px;
+  }
+
+  @media (min-width: 1221px) {
+    left: -65px;
+  }
+
+  @media screen and (min-width:1600px) and (max-width: 1919px) {
+    left: -88px;
+  }
+
+  @media screen and (min-width:1920px) {
+    left: -93px;
+  }
+}
+
+.expBlockArrow {
+  background:white;
+  cursor: pointer !important;
+  height: 141px;
+
+  @media screen and (min-width:1600px) and (max-width: 1919px) {
+    height: 180px;
+  }
+  @media screen and (min-width:1920px) {
+    height: 225px;
+  }
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+    height: 125px;
+  }
+  @media screen and (min-width:767px) and (max-width:1022px) {
+    height: 122px;
+  }
+  @media screen and (max-width:766px) {
+    height: 140px;
+  }
+}
+
+.expBlockArrowRight {
+  top: 0px;
+  position: absolute;
+  right: -28px;
+  transition: .3s ease;
+  width: 15px;
+
+  .arrowRight {
+    position: relative;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(-50%);
+  }
+
+  .arrowRight svg {
+    position: relative;
+    display: block;
+  }
+
+  @media screen and (max-width: 1022px) {
+    right: 0;
+    height: 35px;
+    bottom: -45px;
+  }
+
+  @media (min-width: 1025px) and (max-width: 1220px) {
+    right: -34px;
+  }
+
+  @media (min-width: 1221px) {
+    right: -64px;
+  }
+
+  @media screen and (min-width:1600px) and (max-width: 1919px) {
+    right: -85px;
+  }
+
+  @media screen and (min-width:1920px) {
+    right: -120px;
+  }
+}
+
+.slick-current .otherExpElem {
+  border-left-color: transparent;
+}
+
+.slick-current {
+  + .slick-slide + .slick-slide + .slick-slide .otherExpElem {
+    @media screen and (min-width: 1022px) {
+      border-left-color: transparent;
+    }
+  }
+}
+
+.arrowLeft,
+.arrowRight {
+  polyline {
+    transition: stroke .3s ease;
+  }
+
+  &:hover polyline {
+    stroke: #8d8d8d;
+  }
+}
+
+.otherExpElem {
+	border-left: 1px solid #979797;
+	display: flex;
+	flex-direction: column;
+  margin-right: 68px;
+  min-height: 314px;
+  padding-left: 24px;
+  width: 318px;
+
+  &:hover {
+    .otherExpElemImg img {
+      @media (min-width: 768px) {
+        transform: scale(1.02);
+      }
+    }
+
+    .otherExpElemTitle {
+      color: #8d8d8d;
+    }
+  }
+
+  @media screen and (min-width:1600px) {
+    padding-left: 27px;
+    width: 320px;
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+    margin-right: 28px;
+    padding-left: 14px;
+    width: 266px;
+  }
+
+  @media screen and (min-width:767px) and (max-width:1022px) {
+    margin-right: 58px;
+    padding-left: 14px;
+    width: 217px;
+  }
+
+  @media screen and (max-width:766px) {
+    margin-right: 20px;
+    width: 248px;
+  }
+}
+
+.otherExpElemImg {
+  position: relative;
+  display: block;
+	height: 140px;
+  width: 248px;
+  margin-bottom: 16px;
+  overflow: hidden;
+
+  img {
+    position: relative;
+    display: block;
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+    transition: transform .8s cubic-bezier(.4,.2,.2,1);
+
+    @media screen and (max-width:766px) {
+      height: 100%;
+      width: auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media screen and (min-width:1600px) {
+    height: 180px;
+    width: 317px;
+  }
+  @media screen and (min-width:1920px) {
+    height: 225px;
+    margin-bottom: 21px;
+    width: 397px;
+  }
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+    height: 125px;
+    margin-bottom: 14px;
+    width: 218px;
+  }
+  @media screen and (min-width:767px) and (max-width:1022px) {
+    /*height: auto;*/
+    width: 217px;
+    margin-bottom: 13px;
+  }
+  @media screen and (max-width:766px) {
+    height: 140px;
+    width: 100%;
+    margin-bottom: 6px;
+    overflow: hidden;
+  }
+}
+
+.otherExpElemTitle {
+	font-family: 'Geometria Narrow Heavy';
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 5px;
+  margin-left: -1px;
+  width: 90%;
+  transition: color .3s ease;
+
+  @media screen and (min-width:1600px) {
+    margin-bottom: 8px;
+    width: 90%;
+  }
+
+  @media screen and (min-width:1920px) {
+    font-size: 43px;
+    line-height: 47px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    width: 120%;
+  }
+
+  @media screen and (min-width:1023px) and (max-width:1365px) {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 4px;
+    width: 80%;
+  }
+
+  @media screen and (min-width:767px) and (max-width:1022px) {
+    margin-bottom: 3px;
+    width: 217px;
+  }
+
+  @media screen and (max-width:766px) {
+    margin-bottom: 0;
+  }
+}
+
+.otherExpElemDescr {
+	font-size: 17px;
+	line-height: 24px;
+  width: 91%;
+  font-family: "Aeroport";
+
+  @media screen and (min-width:1920px) {
+    font-size: 19px;
+    line-height: 28px;
+    width: 82%;
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+    line-height: 25px;
+    width: 90%;
+  }
+
+  @media screen and (min-width:767px) and (max-width:1022px) {
+    width: 217px;
+  }
+
+  @media screen and (max-width:766px) {
+    width: 95%;
+  }
+}

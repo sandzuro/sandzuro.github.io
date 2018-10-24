@@ -1,0 +1,1471 @@
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+
+.sl-overlay {
+  opacity: 1 !important;
+}
+
+.vbox-next,
+.vbox-prev {
+  position: fixed;
+  cursor: pointer;
+  top: 50%;
+  margin-top: -22px;
+  text-align: center;
+  display: block;
+  z-index: 1060;
+  color: #000;
+  width: 15px;
+  height: 35px;
+
+  svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.vbox-next {
+  right: calc((73px / 2) - 7px);
+}
+
+.vbox-prev {
+  left: calc((73px / 2) - 7px);
+}
+
+.vbox-title {
+  position: fixed;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% + 39px);
+  color: black;
+  font-family: "Aeroport";
+  font-size: 25px;
+  letter-spacing: 0.3px;
+  top: 30px !important;
+}
+
+.vbox-close {
+  position: fixed;
+  cursor: pointer;
+  top: 25px;
+  right: 63px;
+  margin: 0;
+  z-index: 1060;
+  height: 35px;
+  width: 35px;
+
+  svg {
+    position: relative;
+    display: block;
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+    z-index: -1;
+  }
+}
+
+.vbox-num {
+  position: fixed;
+  color: #000000 !important;
+  clear: left;
+  display: block;
+  font-family: "Aeroport";
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  top: 36px !important;
+  left: 73px;
+  outline: none;
+  background-color: transparent !important;
+  text-align: center;
+
+  span {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+  }
+}
+
+.sl-image {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+}
+
+.vbox-content img {
+  display: block;
+  height: auto !important;
+  max-height: 75vh;
+  width: calc(100vw - (73px * 2)) !important;
+  margin: 0 auto;
+
+  @media (min-width: 1800px) {
+    max-height: none;
+  }
+}
+
+
+.topScreenVideoBlock {
+  display: none;
+  position: absolute;
+  top: 0;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+
+.expPageCentrify {
+  overflow: hidden;
+}
+
+.expPageWrapper {
+  padding: 0 73px 0 73px;
+  font-family: "Aeroport";
+  margin: 0 auto 150px auto;
+  max-width: 1220px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+    max-width: 767px;
+    overflow: hidden;
+    padding: 0 15px 0 15px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1025px) {
+    max-width: 940px;
+    padding: 0 43px 0 43px;
+    margin-bottom: 61px;
+  }
+
+  @media screen and (min-width: 1026px) and (max-width: 1365px) {
+    max-width: 1024px;
+    padding: 0 43px 0 43px;
+    margin-bottom: 33px;
+  }
+
+  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+    max-width: 1220px;
+    margin-bottom: 33px;
+  }
+
+  @media screen and (min-width: 1600px) and (max-width: 1919px) {
+    max-width: 1359px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .expPageWrapper,
+  .topNav {
+    max-width: 1680px;
+  }
+}
+
+.topScreen {
+  position: relative;
+	display: block;
+	margin-left: -15px;
+	overflow: hidden;
+  width: 100vw;
+
+  @media screen and (min-width: 300px) and (max-width:767px) {
+    height: 224px;
+    margin-left: 0;
+    margin-top: 95px;
+    width: calc(100vw - 30px);
+  }
+
+  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+    margin-left: calc((1220px - 100vw)/2);
+    height: 650px;
+  }
+
+  @media screen and (min-width: 1600px) and (max-width: 1919px) {
+    margin-left: calc((1359px - 100vw)/2);
+    height: 765px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1110px) {
+    margin-left: -43px;
+  }
+
+  @media screen and (min-width: 1110px) and (max-width: 1365px) {
+    margin-left: calc((1024px - 100vw)/2);
+  }
+
+  @media screen and (min-width:1920px) {
+    height: 860px;
+    margin-left: calc((1680px - 100vw)/2);
+  }
+}
+
+.topScreen-single-img-wrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    position: relative;
+    top: auto;
+    transform: none;
+    height: 785px;
+  }
+}
+
+.topScreen-single-img {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  @media screen and (min-width: 768px) and (max-width: 999px) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: auto;
+  }
+
+  @media screen and (min-width: 1000px) and (max-width: 1365px) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: auto;
+  }
+}
+
+.topScreenPanoram {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+}
+
+.topScreen-placeholder {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: auto;
+  z-index: -1;
+  opacity: 0;
+}
+
+
+/*NAVIGATION*/
+.light {
+  color: #fff;
+}
+/*.dark {
+  color: #000;
+}*/
+
+.menuActive {
+  display: flex;
+  justify-content: space-between;
+  height: 34px;
+  border-bottom: 2px solid transparent;
+}
+.navMenuHoverIcon {
+  background: url(../../img/icon_arrow_down.svg) right no-repeat;
+  height: 20px;
+  /*margin-top: 9px;*/
+  transition: -webkit-transform 0.25s ease;
+  transition: transform .25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+  width: 13px;
+}
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .navMenuHoverIcon {
+    position: relative;
+    right: 15px;
+  }
+}
+.menuHidden {
+  display: none;
+  flex-direction: column;
+}
+.menuElemNav {
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  opacity: .6;
+  padding: 13px 0;
+}
+.menuHidden .menuElemNav:hover {
+  opacity: 1;
+}
+#topMenuElem {
+  padding: 0;
+  opacity: 1;
+}
+.menuActive .menuElemNav {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.menuActive:hover {
+  border-bottom-color: #000;
+  cursor: pointer !important;
+  opacity: .6;
+  transition: border-bottom-color 0.3s ease;
+}
+.isOpen {
+  border-bottom: 2px solid #000;
+  cursor: pointer !important;
+  opacity: .6;
+  transition: all .3s ease;
+}
+.cityIconWhite {
+  background: url(../../img/icon_arrow_down_white.svg) right no-repeat;
+}
+.cityIconDark {
+  background: url(../../img/icon_arrow_down.svg) right no-repeat;
+}
+/*END HOVER MENU BLOCK*/
+.navSearch {
+  height: 30px;
+  margin-right: 10px;
+  /*margin-top: -3px;*/
+  width: 30px;
+  position: relative;
+  bottom: 5px;
+}
+@media (max-width: 767px) {
+  .navSearch {
+    top: 9px;
+    right: 2px;
+    position: relative;
+    bottom: 0;
+  }
+}
+.navSearch:hover {
+  border-bottom: 2px solid transparent;
+}
+.navSearchDark {
+  background: url(../../img/nav_icon_glass_dark.svg) center no-repeat;
+  background-position-y: 0px;
+}
+.navSearchLight {
+  background: url(../../img/nav_icon_glass.svg) center no-repeat;
+  background-position-y: 0px;
+}
+.navGeo {
+  height: 30px;
+  margin-right: 0px;
+  width: 30px;
+}
+.navGeoDark {
+  background: url(../../img/nav_icon_geo_dark.svg) center no-repeat;
+  background-position-y: 0px;
+}
+.navGeoLight {
+  background: url(../../img/nav_icon_geo.svg) center no-repeat;
+  background-position-y: 0px;
+}
+
+/*JOURNEY ONE Block*/
+
+.descr {
+	display: flex;
+	justify-content: space-between;
+  margin-bottom: 140px;
+  max-width: 1220px;
+	width: 100%;
+
+  @media (in-width: 1366px) {
+    margin-bottom: 75px;
+  }
+
+  @media screen and (min-width:1600px) and (max-width: 1919px) {
+    margin-bottom: 75px;
+    max-width: 1366px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+    margin-bottom: 72px;
+  }
+
+  @media screen and (min-width:1920px) {
+    margin-bottom: 85px;
+    max-width: 1684px;
+    width: 100%;
+  }
+
+  @media screen and (max-width:766px) {
+    margin-left: 0;
+    margin-bottom: 35px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width:1023px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1366px) {
+    margin-bottom: 30px;
+  }
+}
+
+.Mobile {
+  display:none;
+}
+
+.descrBlock {
+	display:flex;
+	flex-direction: column;
+  width: calc((100vw - 174px)/2);
+
+  &:first-child {
+    margin-right: 24px;
+
+    @media screen and (min-width:1600px) and (max-widtH: 1919px) {
+      margin-right: 32px;
+    }
+  }
+
+  @media screen and (max-width:766px) {
+    margin-left: 0px;
+    margin-top: 0px;
+    width: calc((100vw - 30px));
+  }
+
+  @media screen and (min-width:767px) and (max-width:1023px) {
+    margin-left: 0px;
+    margin-top: 0px;
+    width: calc((100vw - 108px)/2);
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+    margin-left: 0px;
+    margin-top: 0px;
+    width: calc((100vw - 108px)/2);
+  }
+
+  @media screen and (min-width:1600px) and (max-widtH: 1919px) {
+    width: calc((100vw - 272px)/2);
+  }
+
+  @media screen and (min-width:1920px) {
+  	width: calc((100vw - 272px)/2);
+  }
+}
+
+
+.descrBlockTitle {
+	font-family: 'Geometria Narrow Heavy';
+  font-size: 80px;
+  letter-spacing: .1px;
+  line-height: 75px;
+  margin-bottom: 27px;
+  margin-top: 58px;
+
+  @media (in-width: 1366px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width:1600px) and (max-width: 1919px) {
+    font-size: 85px;
+    line-height: 84px;
+    margin-bottom: 40px;
+    margin-top: 54px;
+    width: 80%;
+  }
+
+  @media screen and (min-width:1920px) {
+    font-size: 90px;
+    line-height: 90px;
+    margin-bottom: 40px;
+    margin-top: 64px;
+    width: 80%;
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+    font-size: 64px;
+    line-height: 57px;
+    margin-bottom: 25px;
+    margin-top: 28px;
+  }
+
+  @media screen and (min-width:767px) and (max-width:1023px) {
+    font-size: 64px;
+    line-height: 57px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 34px;
+    line-height: 38px;
+    margin-bottom: 23px;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 361px) and (max-width:766px) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 23px;
+    margin-top: 14px;
+    width: 100%;
+  }
+}
+
+
+.descrBlockSnippet {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  letter-spacing: .1px;
+	margin-bottom: 33px;
+
+  @media (min-width: 1366px) and (max-width: 1599px) {
+    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width:1600px) and (max-width: 1919px) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width:1920px) {
+    margin-bottom: 52px;
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width:767px) and (max-width:1023px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width:766px) {
+    margin-bottom: 22px;
+    width: calc(100vw - 30px);
+  }
+}
+
+.descrBlockDescr {
+	font-size: 17px;
+	line-height: 25px;
+	overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    width: calc(100vw - 30px);
+  }
+
+  @media screen and (min-width:1920px) {
+    font-size: 19px;
+    line-height: 30px;
+    width: 82%;
+  }
+}
+
+.descrBlockSnippetElem {
+	height: 20px;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 0 15px;
+
+  @media (max-width: 360px) {
+    font-size: 16px;
+    line-height: 22px;
+    height: auto;
+  }
+
+  @media (min-width:361px) and (max-width:766px) {
+    height: auto;
+  }
+
+  @media screen and (min-width:767px) and (max-width:1023px) {
+    height: auto;
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+    padding: 0 20px;
+    height: auto;
+  }
+
+  @media screen and (min-width:1366px) {
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width:1920px) {
+    font-size: 19px;
+  }
+}
+
+.descrBlockSnippetElem:nth-child(1) {
+  border-right: 1px solid grey;
+  padding-left: 0px;
+
+  @media screen and (max-width:360px) {
+    height: auto;
+  }
+
+  @media screen and (min-width:767px) and (max-width:1023px) {
+    padding-right: 18px;
+    height: auto;
+	}
+
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+    padding-right: 18px;
+  }
+
+  @media (min-width: 1366px) {
+    padding-right: 19px;
+  }
+}
+
+.descrBlockSnippetElem:nth-child(2) {
+	border-right: 1px solid grey;
+}
+
+.descrBlockSnippetElem:nth-child(3) {
+  padding-right: 0px;
+}
+
+@media screen and (max-width:766px) {
+	.noMobile {
+	    display: none;
+	}
+}
+
+.descrBlockButton {
+	align-items: center;
+  align-self: flex-end;
+  border: 1px solid;
+  color: #000000;
+  display: flex;
+  height: 49px;
+  justify-content: center;
+  letter-spacing: .1px;
+  margin-top: 22px;
+  transition: color 1s ease;
+  width: 389px;
+
+  &:hover {
+    cursor: pointer !important;
+    transition: all 1s ease;
+    color: #8D8D8D;
+  }
+
+  @media (min-width: 1366px) and (max-width: 1599px) {
+    margin-top: 75px;
+  }
+
+  @media screen and (min-width:1600px) and (max-width: 1919px) {
+    margin-top: 75px;
+    width: 434px;
+  }
+
+  @media screen and (min-width:1920px) {
+    width: 536px;
+    margin-top: 90px;
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+    font-size: 17px;
+    margin-top: 35px;
+    height: 49px;
+    width: 332px;
+  }
+
+  @media screen and (min-width:767px) and (max-width:1023px) {
+    margin-left: 3px;
+    margin-top: 35px;
+    height: 49px;
+    width: 330px;
+    max-width: 332px;
+  }
+}
+
+
+.descrBlockButton p {
+	font-size: 17px;
+  letter-spacing: .1px;
+	padding-top: 3px;
+}
+@media screen and (min-width: 1920px) {
+    .descrBlockButton p {
+        font-size: 19px;
+    }
+}
+
+.descrBlockButton.Mobile {
+  display:none;
+}
+@media screen and (max-width:766px) {
+	.descrBlockButton.Mobile {
+	    display: flex;
+	    margin-left: 0px;
+	    margin-top: 9px;
+	    height: 50px;
+	    width: calc(100vw - 30px);
+	}
+}
+
+.descrBlockImg.Mobile {
+  display:none;
+
+  @media screen and (max-width:766px) {
+    display: flex;
+    height: 236px;
+    margin-bottom: 7px;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: calc(100vw - 30px);
+  }
+}
+
+.descrBlockImg {
+	background: url(../../img/descr_img_min.gif) right no-repeat;
+  background-size: 100%;
+	height: 300px;
+  margin-top: 69px;
+  width: 460px;
+
+  @media screen and (min-width:767px) and (max-width:1023px) {
+    margin-left: 3px;
+  }
+
+  @media screen and (min-width:767px) {
+    background-size: 540px;
+    width: 332px;
+  }
+
+  @media screen and (min-width:767px) and (max-width:1365px) {
+    margin-top: 130px;
+    background: url(../../img/descr_img_min.gif) -130px -60px no-repeat;
+  }
+
+  @media screen and (min-width: 1366px) {
+    background: url(../../img/descr_img_min.gif) -130px -60px no-repeat;
+  }
+
+  @media screen and (min-width:1920px) {
+    height: 359px;
+    margin-left: -44px;
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width:766px) {
+    height: 451px;
+    margin-left: 32px;
+    margin-top: 54px;
+  }
+}
+
+@media screen and (min-width:1366px) {
+	.vid1366 {
+		display: block;
+	}
+	.vidMob {
+		display: none;
+	}
+}
+@media screen and (max-width:1365px) {
+	.vid1366 {
+		display: none;
+	}
+	.vidMob {
+		display: block;
+	}
+}
+
+/*SLIDER BLOCK*/
+
+@media screen and (max-width:766px) {
+	.sliderBlock {
+		margin-bottom: 30px;
+    	overflow: hidden;
+    }
+}
+
+.sliderBlockPaging {
+  position: absolute;
+  bottom: -45px;
+  white-space: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.sliderBlockPaging li {
+  display: none;
+  position: relative;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: .1px;
+  line-height: 25px;
+
+  &.slick-active {
+    display: block;
+  }
+}
+
+.sliderBlockSlider {
+	cursor: url(../../img/cursor_slider.png) !important;
+	display: flex;
+	margin-bottom: 65px;
+  position: relative;
+  width: 1220px;
+
+  @media screen and (max-width:768px) {
+    height: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100vw;
+    left: -15px !important;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1019px) {
+    height: 281px;
+    margin-bottom: 25px;
+    margin-right: 44px;
+    width: calc(100vw - 52px);
+
+    .slick-list {
+      margin-right: -10px;
+    }
+  }
+
+  @media screen and (min-width: 1020px) and (max-width: 1365px) {
+    margin-bottom: 0;
+    margin-left: 0px;
+    width: 100%;
+    max-width: 1220px;
+  }
+
+  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+    width: 100%;
+    max-width: 1220px;
+    margin-bottom: 72px;
+  }
+
+  @media screen and (min-width: 1600px) and (max-width: 1919px) {
+    height: 378px;
+    margin-bottom: 75px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1920px) {
+    height: 463px;
+    margin-bottom: 85px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1023px) {
+    margin-left: 0;
+    left: 0;
+  }
+}
+
+.sliderBlockArrowLeft {
+  cursor: pointer !important;
+  height: 339px;
+  position: absolute;
+  left: -28px;
+  transition: .3s ease;
+  width: 15px;
+
+  .arrowLeft {
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .arrowLeft svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 1022px) {
+    left: 15px;
+  }
+
+  @media screen and (max-width: 1019px) {
+    height: 35px;
+    bottom: -58px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1019px) {
+    display: none !important;
+  }
+
+  @media (min-width: 1020px) and (max-width: 1220px) {
+    left: -30px;
+  }
+
+  @media (min-width: 1020px) and (max-width: 1365px) {
+    height: 280px;
+  }
+
+  @media (min-width: 1221px) and (max-width: 1599px) {
+    left: -64px;
+  }
+
+  @media screen and (min-width:1600px) and (max-width: 1919px) {
+    left: -74px;
+  }
+
+  @media screen and (min-width:1600px) {
+		height: 379px;
+  }
+
+  @media screen and (min-width:1920px) {
+  	height: 463px;
+    left: -93px;
+  }
+}
+
+.sliderBlockArrowRight {
+  top: 0px;
+  cursor: pointer !important;
+  height: 339px;
+  position: absolute;
+  right: -28px;
+  transition: .3s ease;
+  width: 15px;
+
+  .arrowRight {
+    position: relative;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(-50%);
+  }
+
+  .arrowRight svg {
+    position: relative;
+    display: block;
+  }
+
+  @media (min-width: 768px) and (max-width: 1019px) {
+    display: none !important;
+  }
+
+  @media (min-width: 1020px) and (max-width: 1220px) {
+    right: -30px;
+  }
+
+  @media (min-width: 1020px) and (max-width: 1365px) {
+    height: 280px;
+  }
+
+  @media (min-width: 1221px) and (max-width: 1599px) {
+    right: -65px;
+  }
+
+  @media screen and (min-width:1600px) and (max-width: 1919px) {
+    right: -76px;
+  }
+
+  @media screen and (min-width:1600px) {
+    height: 379px;
+  }
+
+  @media screen and (min-width:1920px) {
+    height: 463px;
+    right: -84px;
+  }
+
+  @media screen and (max-width: 1019px) {
+    right: 15px;
+    height: 35px;
+    bottom: -58px;
+    top: auto;
+  }
+}
+
+.sliderBlockElement {
+	height: 342px;
+  width: 596px;
+  position: relative;
+
+  @media screen and (min-width: 1920px) {
+    height: 463px;
+    width: 823px;
+  }
+
+  @media screen and (min-width: 1600px) and (max-width: 1919px) {
+    height: 378px;
+    width: 664px;
+    margin-right: 27px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1110px) {
+    height: 280px !important;
+    width: calc(50vw - 60px);
+    margin-right: 34px !important;
+  }
+
+  @media screen and (min-width: 1111px) and (max-width: 1365px) {
+    height: 280px !important;
+    width: 500px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    height: 271px;
+    width: 508px;
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 225px;
+    width: 100vw;
+
+    .overlay {
+      display: none;
+    }
+  }
+}
+
+.sliderBlockElement.slick-slide {
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+  }
+}
+
+.sliderVideo {
+  border-top: 5px solid black;
+  border-bottom: 3px solid black;
+	height: 341px;
+	margin-top: -9px;
+  width:100%;
+
+  @media screen and (min-width:1920px) {
+    border-top: none;
+    border-bottom: none;
+    height: 463px;
+    margin-top: 0px;
+  }
+
+  @media screen and (min-width:1600px) and (max-width: 1919px) {
+    height: 379px;
+    margin-top: -6px;
+  }
+
+  @media screen and (min-width:1024px) and (max-width: 1365px) {
+    border-top: none;
+    border-bottom: none;
+    height: 280px;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width:767px) and (max-width: 1023px) {
+    border-top: none;
+    border-bottom: none;
+    height: 271px;
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    border-top: none;
+    border-bottom: none;
+    height: auto;
+    margin-top: 0;
+  }
+}
+
+.overlay {
+    background: rgb(255,255,255);
+    height: 0%;
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    transition-property: opacity, height;
+    transition-duration: 1.5s, 0s;
+    transition-delay: 0s, 1.5s;
+    transition-timing-function: ease;
+    /* transition: height 1.5s;
+    transition-delay: 1.5s; */
+    width: 100%;
+}
+.sliderBlockElement:hover > .overlay {
+    height: 100%;
+    opacity: 0.2;
+    transition: opacity 1.5s;
+}
+.sliderBlockElement:hover > .sliderElem img {
+    transform: scale(1.03);
+}
+
+.sliderElem.Mobile {
+  display: block;
+  @media (min-width: 768px) {
+    display: none
+  }
+}
+
+.sliderElem {
+  height: 341px;
+  width: 596px;
+  overflow: hidden;
+
+  img {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  @media screen and (min-width:1920px) {
+    height: 463px;
+    width: 100%;
+  }
+
+  @media screen and (min-width:1600px) and (max-width:1919px) {
+    height: 378px;
+    width: 100%;
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+    height: 331px;
+    width: 100%;
+  }
+
+  @media screen and (min-width:767px) and (max-width:1023px) {
+    height: 271px;
+    width: 100%;
+  }
+
+  @media screen and (max-width:766px) {
+    height: auto;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+}
+
+.sliderElem1 {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 482px;
+    transition: background .3s;
+  }
+}
+
+.sliderElem2,
+.sliderElem3,
+.sliderElem4 {
+  img {
+    transition: transform .8s cubic-bezier(0.4, 0.2, 0.2, 1);
+  }
+}
+
+/* Lightbox modifications */
+.closeButtonLightbox {
+    background:url(../../img/icon_cross.svg) center no-repeat;
+    position:absolute;
+    top: 30px;
+    right: 130px;
+    height: 50px;
+    width: 50px;
+}
+.copyrightLightbox {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+}
+
+.sliderBlockDescr {
+	display: flex;
+	margin-bottom: 150px;
+  width: 1216px;
+
+  @media screen and (min-width:1920px) {
+    margin-bottom: 170px;
+    width: 100%;
+  }
+
+  @media screen and (min-width:1600px) {
+    width: 100%;
+    margin-bottom: 145px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1366px) and (max-width: 1599px) {
+		width: 100%;
+    max-width: 1220px;
+    margin-bottom: 72px;
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+    margin-bottom: 54px;
+    width: 100%;
+  }
+
+  @media screen and (min-width:767px) and (max-width:1023px) {
+    margin-bottom: 75px;
+    width: 100%;
+  }
+
+  @media screen and (max-width:766px) {
+    flex-direction: column;
+    margin-bottom: 49px;
+  }
+}
+
+.sliderBlockDescrImg {
+  position: relative;
+  height: 324px;
+  margin-right: 24px;
+  width: auto;
+
+  @media screen and (min-width:767px) and (max-width:1023px) {
+    margin-left: 0px;
+    margin-top: 0px;
+    width: calc((100vw - 108px)/2);
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1365px) {
+    width: calc((100vw - 108px)/2);
+  }
+
+  @media (min-width: 1366px) and (max-width: 1599px) {
+    width: 596px;
+    height: 428px;
+  }
+
+  @media screen and (min-width: 1600px) and (max-width: 1919px) {
+    width: 664px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    width: 823px;
+  }
+
+  img {
+    position: relative;
+    display: block;
+    height: 90%;
+    width: auto;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  @media screen and (min-width:1600px) {
+    height: 430px;
+    margin-right: 32px;
+  }
+}
+
+.sliderBlockDescrBlock {
+	display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  line-height: 25px;
+	font-family: "Aeroport";
+  letter-spacing: .1px;
+  width: calc((100vw - 174px)/2);
+
+  @media screen and (min-width: 1024px) and (max-width: 1365px) {
+    width: 621px;
+  }
+
+  @media screen and (max-width:766px) {
+    font-size: 17px;
+    margin-left: 0px;
+    margin-top: 35px;
+    width: calc(100vw - 30px);
+  }
+
+  @media screen and (min-width:767px) and (max-width:1019px) {
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 0;
+    width: calc((100vw - 108px)/2);
+  }
+
+  @media screen and (min-width:1020px) and (max-width:1365px) {
+    font-size: 17px;
+    margin-left: 0px;
+    margin-top: 30px;
+    width: calc((100vw - 108px)/2);
+  }
+
+  @media (min-width: 1366px) and (max-width: 1599px) {
+    width: 596px;
+  }
+
+  @media screen and (min-width:1600px) and (max-width: 1919px) {
+    width: 664px;
+  }
+
+  @media screen and (min-width:1920px) {
+    font-size: 19px;
+    line-height: 29px;
+    margin-top: 0;
+    width: 823px;
+  }
+}
+
+.sliderBlockDescrText {
+	margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+    width: calc((100vw - 30px));
+  }
+
+  @media screen and (min-width:1920px) {
+    font-size: 19px;
+    margin-top: 0;
+  }
+}
+
+.sliderBlockDescrTable {
+	display: flex;
+	flex-direction: column;
+}
+
+.sliderBlockDescrTableRow {
+	border-bottom: 1px solid grey;
+	display: flex;
+	padding-bottom: 12px;
+	padding-top: 10px;
+}
+@media screen and (max-width: 767px) {
+    .sliderBlockDescrTableRow {
+        display: block;
+        width: calc((100vw - 30px));
+    }
+}
+@media screen and (min-width:767px) and (max-width: 1023px) {
+    .sliderBlockDescrTableRow {
+        display: block;
+    }
+}
+
+.sliderBlockDescrTableElem {
+  color: #000 !important;
+
+  a {
+    color: #000 !important;
+  }
+
+  a:visited,
+  a:focus,
+  a:active {
+    color: #000 !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1599px) {
+    width: 60%;
+  }
+}
+
+.sliderBlockDescrTableRow:last-child {
+	border-bottom: 1px solid transparent;
+}
+@media screen and (min-width: 1024px) {
+    .sliderBlockDescrTableTitle {
+        font-family: "Aeroport-Bold";
+    	width: calc(100% * (205/596));
+    }
+}
+@media screen and (max-width: 1023px) {
+    .sliderBlockDescrTableTitle {
+        font-family: "Aeroport-Bold";
+        margin-right: 0px;
+    }
+}
+
+.sliderBlockDescrButton {
+	align-items: center;
+  border: 1px solid;
+  color: #000000;
+  display: flex;
+  height: 49px;
+  justify-content: center;
+  letter-spacing: .1px;
+  margin-left: 3px;
+  margin-top: 55px;
+  transition: opacity .3s ease;
+  width: 389px;
+
+  @media screen and (min-width: 1366px) {
+  	margin-top: 55px;
+  }
+
+  @media screen and (min-width:1600px) {
+  	margin-top: 69px;
+    width: 429px;
+  }
+
+  @media screen and (min-width:1920px) {
+  	margin-top: 81px;
+    width: 537px;
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1365px) {
+  	font-size: 17px;
+    margin-top: 72px;
+    width: 331px;
+  }
+
+  @media screen and (min-width:767px) and (max-width:1023px) {
+    font-size: 17px;
+    height: 49px;
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  @media screen and (max-width:766px) {
+  	font-size: 17px;
+    margin-left: 0px;
+    margin-top: 25px;
+    width: calc(100vw - 32px);
+    height: 49px;
+  }
+}
+
+.sliderBlockDescrButton:hover {
+	cursor: pointer !important;
+	color: #8D8D8D;
+	transition: all .3s ease;
+}
+
+.sliderBlockDescrImg.Mobile {
+  @media screen and (max-width:768px) {
+    height: 204px;
+    width: calc(100vw - 30px);
+    margin-right: 0;
+    margin-top: 65px;
+	}
+}
+
+.sliderBlockDescrButton p {
+	padding-top: 3px;
+}

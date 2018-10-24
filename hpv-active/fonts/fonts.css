@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Aeroport';
+    src: url('Aeroport.eot');
+    src: url('Aeroport.eot?#iefix') format('embedded-opentype'),
+        url('Aeroport.woff2') format('woff2'),
+        url('Aeroport.woff') format('woff'),
+        url('Aeroport.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria Narrow Heavy';
+    src: url('GeometriaNarrow-Heavy.woff2') format('woff2'),
+        url('GeometriaNarrow-Heavy.ttf') format('truetype'),
+        url('GeometriaNarrow-Heavy.svg#GeometriaNarrow-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Aeroport-Bold';
+    src: url('Aeroport-Bold.eot');
+    src: url('Aeroport-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Aeroport-Bold.woff2') format('woff2'),
+        url('Aeroport-Bold.woff') format('woff'),
+        url('Aeroport-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+	font-family: "Aeroport";
+}

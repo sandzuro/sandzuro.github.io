@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="39px" viewBox="0 0 49 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Курсор-ховер" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-6.000000, -7.000000)">
+        <ellipse id="Oval" fill="#000000" transform="translate(30.266660, 26.423394) rotate(-30.000000) translate(-30.266660, -26.423394) " cx="30.2666605" cy="26.4233938" rx="26" ry="15.5"></ellipse>
+    </g>
+</svg>

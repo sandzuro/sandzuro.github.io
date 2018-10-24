@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp"
+  },
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-atomizer": "^1.0.7",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-include": "^2.3.1",
+    "gulp-less": "^3.5.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-uglify": "^1.5.4",
+    "gulp-util": "^3.0.8",
+    "postcss-import": "^11.1.0",
+    "postcss-nested": "^3.0.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^8.5.0",
+    "npm": "^6.0.1"
+  }
+}
