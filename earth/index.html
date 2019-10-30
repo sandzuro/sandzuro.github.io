@@ -1,6 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="earth" content="test globe">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				font-family: sans-serif;
+				font-size: 13px;
+				background-color: #fff;
+				margin: 0px;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+<body ontouchstart="">
 <canvas id="globe" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" width="581" height="488"></canvas>
-//    <script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
 <script src="https://d3js.org/d3-geo.v1.min.js"></script>
 <script src="https://d3js.org/topojson.v2.min.js"></script>
@@ -21,7 +37,7 @@ var degPerSec = 6
 var angles = { x: -20, y: 40, z: 0}
 // colors
 var colorWater = '#fff'
-var colorLand = '#111'
+var colorLand = '#2E00A8'
 var colorGraticule = '#ccc'
 var colorCountry = '#111'
 
@@ -228,3 +244,5 @@ loadData(function(world, cList) {
   autorotate = d3.timer(rotate)
 })
 </script>
+</body>
+</html>
