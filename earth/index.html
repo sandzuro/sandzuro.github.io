@@ -37,10 +37,10 @@ var degPerSec = 6
 var angles = { x: -20, y: 40, z: 0}
 // colors
 var colorWater = '#fff'
-var colorLand = '#2E00A8'
-var colorGraticule = '#ccc'
-var colorCountry = '#111'
-
+var colorLand = '#06EAA7'
+var colorGraticule = '#F6F6F6'
+var colorCountry = '#FF4CF8'
+var strokeCountry = '#2E00A8'
 
 //
 // Handler
@@ -133,9 +133,12 @@ function render() {
   fill(water, colorWater)
   stroke(graticule, colorGraticule)
   fill(land, colorLand)
-  if (currentCountry) {
+	stroke(land, strokeCountry)
+	stroke(countries, strokeCountry)
+/*  if (currentCountry) {
     fill(currentCountry, colorCountry)
   }
+	*/
 }
 
 function fill(obj, color) {
