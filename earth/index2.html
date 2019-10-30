@@ -89,8 +89,8 @@ select {
 
 
   queue()
-  .defer(d3.json, "/d/world-110m.json")
-  .defer(d3.tsv, "/d/world-110m-country-names.tsv")
+  .defer(d3.json, "/earth/d/world-110m.json")
+  .defer(d3.tsv, "/earth/d/world-110m-country-names.tsv")
   .await(ready);
 
   //Main function
