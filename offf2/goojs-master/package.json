@@ -57,7 +57,7 @@
     "madge": "~0.5.0",
     "marked": "~0.3.3",
     "mkdirp": "~0.5.0",
-    "mustache": "~2.0.0",
+    "mustache": "~3.1.0",
     "node-watch": "~0.3.4",
     "rimraf": "~2.3.3",
     "selenium-webdriver": "~2.45.1",
