@@ -19,7 +19,7 @@
     "colors": "~1.1.0",
     "commander": "~2.8.1",
     "escodegen": "~1.6.1",
-    "eslint": "2.4.0",
+    "eslint": "6.6.0",
     "esprima": "~2.2.0",
     "estraverse": "~4.1.0",
     "file": "~0.2.2",
