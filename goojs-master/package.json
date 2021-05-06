@@ -62,7 +62,7 @@
     "rimraf": "^2.6.3",
     "selenium-webdriver": "~2.45.1",
     "uglify-js": "~2.4.21",
-    "underscore": "~1.8.3",
+    "underscore": "~1.12.1",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.12.1",
     "wrench": ">=1.5.8",
