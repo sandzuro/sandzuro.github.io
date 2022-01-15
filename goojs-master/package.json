@@ -55,7 +55,7 @@
     "karma-script-launcher": "0.1.0",
     "karma-webpack": "^1.7.0",
     "madge": "~0.5.0",
-    "marked": "~0.3.3",
+    "marked": "~4.0.10",
     "mkdirp": "~0.5.0",
     "mustache": "~2.0.0",
     "node-watch": "~0.3.4",
