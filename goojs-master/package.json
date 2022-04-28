@@ -15,7 +15,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "async": "~0.9.0",
+    "async": "~2.6.4",
     "colors": "~1.1.0",
     "commander": "~2.8.1",
     "escodegen": "~1.6.1",
